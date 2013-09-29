@@ -1,0 +1,214 @@
+digraph Standards {
+/*
+
+    http://www.graphviz.org/doc/info/lang.html
+    http://www.graphviz.org/doc/info/attrs.html
+
+	subgraph cluster_coding_standard_name_1 {
+		label = "Coding Standard Name"
+		style="filled,rounded"
+		fontcolor=white
+        color=red
+		fillcolor=orange
+
+		node [
+		    style="filled,rounded"
+		    shape=box
+		    fillcolor="palegreen"
+		    color=white
+		];
+	}//
+*/
+
+	subgraph cluster_Frameworks {
+		label = "Frameworks"
+		style="filled,rounded"
+		fontcolor=white
+        color=red
+		fillcolor=orange
+
+		node [
+		    style="filled,rounded"
+		    shape=box
+		    color=white
+		    fontcolor=white
+		];
+		
+		PSR     [label="PSR-2", fillcolor="cornflowerblue"]
+		PEAR    [label="PEAR", fillcolor="chartreuse4"]
+		ZEND    [label="Zend"]
+		SYMFONY [label="Symfony"]
+		CAKE    [label="Cake PHP"]
+		TYPO    [label="Typo/Flow 3"]
+		HORDE   [label="Horde"]
+		WP      [label="WordPress"]
+	}//Frameworks
+
+	subgraph cluster_Tags {
+		label = "Tags"
+		
+		tag_shortTagAllowed    [label="Short tag '<?' allowed"]
+		tag_shortTagNotAllowed [label="Short tag '<?' allowed"]
+
+		tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
+		tag_closingTagManditory  [label="Closing tag '?>' manditory"]
+		tag_closingTagNotAllowed [label="Closing tag '?>' not allowed"]
+	}//Tags
+	
+	
+	subgraph cluster_NameConventions {
+		label = "Naming Conventions"
+        /* Available Casing Styles are:
+
+            camel       : camelCase         - camel case, first letter lowercase
+            pascal      : PascalCase        - camel case, first letter uppercase
+            snake       : snake_case        - snakecase, all letters lowercase
+            snakeCaps   : CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+            snakePascal : Snake_Pase        - snakecase, all letters lowercase except first of each word
+
+        */
+
+    	subgraph cluster_ClassName {
+    		label = "Class Name"
+            name_class_pascal [label="PascalCase"]
+        }//ClassName
+
+    	subgraph cluster_methodName {
+    		label = "Class Method Name"
+            name_method_camel [label="camelCase"]
+        }//MethodName
+
+    	subgraph cluster_classConstantName {
+    		label = "Class Constant Name"
+            name_classConstant_snakeCaps [label="CAPS_SNAKE_CASE"]
+        }//ClassConstantName
+        
+        
+    	subgraph cluster_PhpCasing {
+            PhpKeywords_lowerCase  [label="PHP Keywords LowerCase (try/catch/if/switch/etc)"]
+            PhpKeywords_upperCase  [label="PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)"]
+
+            PhpConstants_lowerCase [label="PHP Constants LowerCase (true/false/null)"]
+            PhpConstants_upperCase [label="PHP Constants UpperCase (TRUE/FALSE/NULL)"]
+        }//PhpCasing
+	}//NameConventions
+
+	subgraph cluster_Whitespace {
+		label = "Whitespace"
+		
+	    subgraph cluster_Indentation {
+		    label = "Indentation"
+
+		    indentation_tabs    [label="Tabs"]
+		    indentation_2spaces [label="2 Spaces"]
+		    indentation_4spaces [label="4 Spaces"]
+        }//Indentation
+		    
+	    subgraph cluster_SwitchIndentation {
+		    label = "Indentation"
+
+		    indentation_switch_case_0   [label="Don`t indent 'case' from 'switch'"]
+		    indentation_switch_case_1   [label="Indent 'case' one level from 'switch'"]
+		    indentation_switch_case_2   [label="Indent 'case' two levels from 'switch'"]
+		    
+		    indentation_switch_break_0   [label="Don`t indent 'break' from 'switch'"]
+		    indentation_switch_break_1   [label="Indent 'break' one level from 'switch'"]
+		    indentation_switch_break_2   [label="Indent 'break' two levels from 'switch'"]
+        }//SwitchIndentation
+        
+        subgraph cluster_LineLength {
+            label = "Line Length"
+            
+            linelength_HardLimit80  [label="Hard limit on 80 characters"]
+            linelength_HardLimit120 [label="Hard limit on 120 characters"]
+            linelength_noHardLimit  [label="No hard limit on line length"]
+            
+            linelength_softLimit80  [label="Soft limit on 80 characters"]
+            linelength_softLimit85  [label="Soft limit on 85 characters"]
+            linelength_softLimit120 [label="Soft limit on 120 characters"]
+            linelength_noSoftLimit  [label="No soft limit on line length"]
+        }//LineLength
+
+
+        classAndCrew_sameLine [label="Class keywords (extends/implements) on the same line as class name"]
+
+        subgraph cluster_Braces {
+            label = "Brace Placement"
+
+            /* Available Casing Styles are:
+
+                KandR       : K & R Style (Kernighan and Ritchie)
+                             Both opening and closing braces on a seperates line 
+                             from the class/method/control structure declaration 
+                OTBS        : "one true brace style"
+                             The opening brace on the same line as the 
+                             class/method/control structure declaration with the 
+                             closing brace on a seperates line. Except for 'else'
+                             and 'elseif' keywords.
+                STROUSTRUP  : Bjarne Stroustrup's adaptation of K&R style
+                             The opening brace on the same line as the 
+                             class/method/control structure declaration with the 
+                             closing brace on a seperates line. Even for 'else'
+                             and 'elseif' keywords.
+            */
+
+            brace_class_KandR [label="Class opening/closing braces on seperate line"]
+
+            brace_method_KandR [label="Method opening/closing braces on seperate line"]
+
+            brace_controlStructure_OTBS [label="Control structure opening/closing braces on same line as declaration"]
+            
+            brace_controlStructure_mandatory [label="Control structure braces are mandatory"]
+        }//Braces
+        
+	    subgraph cluster_Spaces {
+
+            controlStructureKeyword_spaceAfter      [label="Space between control keyword and opening parenthesis"]
+            controlStructureKeyword_noSpaceAfter    [label="No space between control keyword and opening parenthesis"]
+	
+            controlStructureParentheses_spaces      [label="Space between control parenthesis and innards"]
+            controlStructureParentheses_noSpaces    [label="No space between control parenthesis and innards"]
+		
+            methodName_spaceAfter   [label="Space between method name and opening parenthesis"]
+            methodName_noSpaceAfter [label="No space between method name and opening parenthesis"]
+        }//Spaces
+	}//Whitespace
+
+    subgraph cluster_Comments {
+        docblocks_mandatory [label="Docblocks manditory"]
+        docblocks_optional  [label="Docblocks optional"]
+    }//Comments
+    
+    subgraph cluster_DeclareOrder {
+	    label = "Method Declaration Order"
+
+    	declareOrder_method_visibilityBeforeFinal   [label="abstract/final declared after visibility"]
+    	declareOrder_method_visibilityAfterFinal    [label="abstract/final declared before visibility"]
+
+    	declareOrder_method_visibilityBeforeStatic  [label="static declared after visibility"]
+    	declareOrder_method_visibilityAfterStatic   [label="static declared before visibility"]
+    }//DeclareOrder
+
+	subgraph cluster_Miscellaneous {
+    	encoding_utf8 [label="UTF-8"]
+    }//Miscellaneous
+
+
+    edge [color="cornflowerblue"]
+    PSR -> encoding_utf8
+    
+    edge [color="chartreuse4"]
+    PEAR -> indentation_4spaces
+    PEAR -> linelength_noHardLimit
+    PEAR -> linelength_softLimit85
+    PEAR -> brace_controlStructure_OTBS
+    PEAR -> indentation_switch_case_0
+    PEAR -> indentation_switch_break_1
+    PEAR -> brace_class_KandR
+    PEAR -> brace_method_KandR
+    PEAR -> docblocks_mandatory
+    PEAR -> tag_shortTagNotAllowed
+
+}//Standards
+ 
+#EOF
