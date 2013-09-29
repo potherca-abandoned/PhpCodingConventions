@@ -1,0 +1,61 @@
+
+brace_class_KandR 			                Class opening/closing braces on seperate line
+brace_controlStructure_mandatory 			Control structure braces are mandatory
+brace_controlStructure_OTBS 			    Control structure opening/closing braces on same line as declaration
+brace_method_KandR 			                Method opening/closing braces on seperate line
+
+classAndCrew_sameLine 			            Class keywords (extends/implements) on the same line as class name
+
+controlStructureKeyword_noSpaceAfter    	No space between control keyword and opening parenthesis
+controlStructureKeyword_spaceAfter      	Space between control keyword and opening parenthesis
+controlStructureParentheses_noSpaces    	No space between control parenthesis and innards
+controlStructureParentheses_spaces      	Space between control parenthesis and innards
+
+declareOrder_method_visibilityAfterFinal    abstract/final declared before visibility
+declareOrder_method_visibilityAfterStatic   static declared before visibility
+declareOrder_method_visibilityBeforeFinal   abstract/final declared after visibility
+declareOrder_method_visibilityBeforeStatic  static declared after visibility
+
+docblocks_mandatory 			            Docblocks manditory
+docblocks_optional  			            Docblocks optional
+
+encoding_utf8 			                    UTF-8
+
+indentation_2spaces 			            2 Spaces
+indentation_4spaces 			            4 Spaces
+indentation_tabs    			            Tabs
+
+indentation_switch_break_0   			    Don`t indent 'break' from 'switch'
+indentation_switch_break_1   			    Indent 'break' one level from 'switch'
+indentation_switch_break_2   			    Indent 'break' two levels from 'switch'
+indentation_switch_case_0   			    Don`t indent 'case' from 'switch'
+indentation_switch_case_1   			    Indent 'case' one level from 'switch'
+indentation_switch_case_2   			    Indent 'case' two levels from 'switch'
+
+linelength_HardLimit120 			        Hard limit on 120 characters
+linelength_HardLimit80  			        Hard limit on 80 characters
+linelength_noHardLimit  			        No hard limit on line length
+linelength_noSoftLimit  			        No soft limit on line length
+linelength_softLimit120 			        Soft limit on 120 characters
+linelength_softLimit80  			        Soft limit on 80 characters
+linelength_softLimit85  			        Soft limit on 85 characters
+
+methodName_noSpaceAfter 			        No space between method name and opening parenthesis
+methodName_spaceAfter   			        Space between method name and opening parenthesis
+
+name_classConstant_snakeCaps 			    CAPS_SNAKE_CASE
+name_class_pascal 			                PascalCase
+name_method_camel 			                camelCase
+
+PhpConstants_lowerCase 			            PHP Constants LowerCase (true/false/null)
+PhpConstants_upperCase 			            PHP Constants UpperCase (TRUE/FALSE/NULL)
+PhpKeywords_lowerCase  			            PHP Keywords LowerCase (try/catch/if/switch/etc)
+PhpKeywords_upperCase  			            PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)
+
+tag_closingTagAllowed    			        Closing tag '?>' allowed
+tag_closingTagManditory  			        Closing tag '?>' manditory
+tag_closingTagNotAllowed 			        Closing tag '?>' not allowed
+tag_shortTagAllowed    			            Short tag '<?' allowed
+tag_shortTagNotAllowed 			            Short tag '<?' allowed
+
+
