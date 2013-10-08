@@ -71,6 +71,12 @@ name_classVariable_snakeCaps                - CAPS_SNAKE_CASE
 name_classVariable_snake                    - snake_case
 name_classVariable_snakePascal              - Snake_Pascal_Case
 
+name_constant_camel                         - camelCase
+name_constant_pascal                        - PascalCase
+name_constant_snake                         - snake_case
+name_constant_snakeCaps                     - CAPS_SNAKE_CASE
+name_constant_snakePascal                   - Snake_Pascal_Case
+
 name_function_camel                         - camelCase
 name_function_pascal                        - PascalCase
 name_function_snakeCaps                     - CAPS_SNAKE_CASE
@@ -94,7 +100,6 @@ space_controlStructureParentheses_spaces    - Space between control parenthesis 
 
 space_methodName_noSpaceAfter               - No space between method name and opening parenthesis
 space_methodName_spaceAfter                 - Space between method name and opening parenthesis
-
 space_methodParamsBlock_noSpaceAfter        - No space after method parameter block and opening brace
 space_methodParamsBlock_spaceAfter          - Space after method parameter block and opening brace
 
@@ -105,3 +110,12 @@ tag_closingTagNotAllowed                    - Closing tag '?>' not allowed
 tag_shortTagAllowed                         - Short tag '<?' allowed
 tag_shortTagNotAllowed                      - Short tag '<?' allowed
 
+
+@FIXME: We're going to have to add a lot of "Don't care" labels for various subgraphs. (look for orphan blocks in the PNG)
+
+@TODO: Usage of include_once versus require_once?
+@TODO: Usage of underscore '_' for private/protected properties?
+@TODO: Conventions for file names?
+
+
+#EOF
