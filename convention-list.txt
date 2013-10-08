@@ -20,6 +20,9 @@ docblocks_mandatory 			            Docblocks manditory
 docblocks_optional  			            Docblocks optional
 
 encoding_utf8 			                    UTF-8
+encoding_ISO_8859_1
+
+errorLevel_Strict
 
 indentation_2spaces 			            2 Spaces
 indentation_4spaces 			            4 Spaces
@@ -32,6 +35,11 @@ indentation_switch_case_0   			    Don`t indent 'case' from 'switch'
 indentation_switch_case_1   			    Indent 'case' one level from 'switch'
 indentation_switch_case_2   			    Indent 'case' two levels from 'switch'
 
+lineEnding_any                              Whatever Line Endings You Like
+lineEnding_LF                               UNIX Style (LF Line Endings)
+lineEnding_CR                               Mac Style (CR Line Endings)
+lineEnding_LFCR                             Windows Style (CRLF Line Endings)
+
 linelength_HardLimit120 			        Hard limit on 120 characters
 linelength_HardLimit80  			        Hard limit on 80 characters
 linelength_noHardLimit  			        No hard limit on line length
@@ -43,9 +51,35 @@ linelength_softLimit85  			        Soft limit on 85 characters
 methodName_noSpaceAfter 			        No space between method name and opening parenthesis
 methodName_spaceAfter   			        Space between method name and opening parenthesis
 
-name_classConstant_snakeCaps 			    CAPS_SNAKE_CASE
-name_class_pascal 			                PascalCase
-name_method_camel 			                camelCase
+name_class_camel                            camelCase         - camel case, first letter lowercase
+name_class_pascal                           PascalCase        - camel case, first letter uppercase
+name_class_snake                            snake_case        - snakecase, all letters lowercase
+name_class_snakeCaps                        CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+name_class_snakePascal                      Snake_Case        - snakecase, all letters lowercase except first of each word
+
+name_classConstant_camel                    camelCase         - camel case, first letter lowercase
+name_classConstant_pascal                   PascalCase        - camel case, first letter uppercase
+name_classConstant_snake                    snake_case        - snakecase, all letters lowercase
+name_classConstant_snakeCaps                CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+name_classConstant_snakePascal              Snake_Case        - snakecase, all letters lowercase except first of each word
+
+name_classMethod_camel                           camelCase         - camel case, first letter lowercase
+name_classMethod_pascal                          PascalCase        - camel case, first letter uppercase
+name_classMethod_snake                           snake_case        - snakecase, all letters lowercase
+name_classMethod_snakeCaps                       CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+name_classMethod_snakePascal                     Snake_Case        - snakecase, all letters lowercase except first of each word
+
+name_classVariable_camel                    camelCase         - camel case, first letter lowercase
+name_classVariable_pascal                   PascalCase        - camel case, first letter uppercase
+name_classVariable_snake                    snake_case        - snakecase, all letters lowercase
+name_classVariable_snakeCaps                CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+name_classVariable_snakePascal              Snake_Case        - snakecase, all letters lowercase except first of each word
+
+name_function_camel                         camelCase         - camel case, first letter lowercase
+name_function_pascal                        PascalCase        - camel case, first letter uppercase
+name_function_snake                         snake_case        - snakecase, all letters lowercase
+name_function_snakeCaps                     CAPS_SNAKE_CASE   - snakecase, all letters uppercase
+name_function_snakePascal                   Snake_Case        - snakecase, all letters lowercase except first of each word
 
 PhpConstants_lowerCase 			            PHP Constants LowerCase (true/false/null)
 PhpConstants_upperCase 			            PHP Constants UpperCase (TRUE/FALSE/NULL)

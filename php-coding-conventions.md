@@ -2,7 +2,7 @@
  - CodeIgniter  [↗](http://ellislab.com/codeigniter/user-guide/general/styleguide.html)
  - FIG          [↗](http://www.php-fig.org/psr/2)
  - HORDE        [↗](http://www.horde.org/apps/horde/docs/?f=CODING_STANDARDS.html)
- - PEAR         [↗](http://pear.php.net/manual/en/standards.php)
+ - <del>PEAR</del>         [↗](http://pear.php.net/manual/en/standards.php)
  - Symfony      [↗](http://symfony.com/doc/current/contributing/code/standards.html)
  - TYPO3        [↗](http://docs.typo3.org/flow/TYPO3FlowDocumentation/TheDefinitiveGuide/PartV/CodingGuideLines/Index.html)
  - WordPress    [↗](http://make.wordpress.org/core/handbook/coding-standards/php/)
