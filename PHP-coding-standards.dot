@@ -1,6 +1,6 @@
 digraph Standards {
 
-    splines = "true"	
+    splines = "true"    
     
     node [
         constraint=false
@@ -8,9 +8,9 @@ digraph Standards {
       
 /*
     splines = '' | none
-    splines = line | false	
-    splines = polyline	
-    splines = ortho	
+    splines = line | false    
+    splines = polyline    
+    splines = ortho    
     splines = spline | true
 */
 
@@ -22,60 +22,60 @@ digraph Standards {
 
     http://graphviz-dev.appspot.com/
 
-	subgraph cluster_coding_standard_name_1 {
-		label = "Coding Standard Name"
-		style="filled,rounded"
-		fontcolor=white
+    subgraph cluster_coding_standard_name_1 {
+        label = "Coding Standard Name"
+        style="filled,rounded"
+        fontcolor=white
         color=red
-		fillcolor=orange
+        fillcolor=orange
 
-		node [
-		    style="filled,rounded"
-		    shape=box
-		    fillcolor="palegreen"
-		    color=white
-		];
-	}//
+        node [
+            style="filled,rounded"
+            shape=box
+            fillcolor="palegreen"
+            color=white
+        ];
+    }//
 */
 
-	subgraph cluster_Frameworks {
-		label = "Frameworks"
-		style="filled,rounded"
-		fontcolor=white
+    subgraph cluster_Frameworks {
+        label = "Frameworks"
+        style="filled,rounded"
+        fontcolor=white
         color=red
-		fillcolor=orange
+        fillcolor=orange
 
-		node [
-		    style="filled,rounded"
-		    shape=box
-		    color=white
-		    fontcolor=white
-		];
-		
-		PSR     [label="PSR-2", fillcolor="cornflowerblue"]
-		PEAR    [label="PEAR", fillcolor="chartreuse4"]
-		ZEND    [label="Zend"]
-		SYMFONY [label="Symfony"]
-		CAKE    [label="Cake PHP"]
-		TYPO    [label="Typo/Flow 3"]
-		HORDE   [label="Horde"]
-		WP      [label="WordPress"]
-	}//Frameworks
+        node [
+            style="filled,rounded"
+            shape=box
+            color=white
+            fontcolor=white
+        ];
+        
+        PSR     [label="PSR-2", fillcolor="cornflowerblue"]
+        PEAR    [label="PEAR", fillcolor="chartreuse4"]
+        ZEND    [label="Zend"]
+        SYMFONY [label="Symfony"]
+        CAKE    [label="Cake PHP" fillcolor="crimson"] //red #d62738 or blue #417282
+        TYPO    [label="Typo/Flow 3"]
+        HORDE   [label="Horde"]
+        WP      [label="WordPress"]
+    }//Frameworks
 
-	subgraph cluster_Tags {
-		label = "Tags"
-		
-		tag_shortTagAllowed    [label="Short tag '<?' allowed"]
-		tag_shortTagNotAllowed [label="Short tag '<?' allowed"]
+    subgraph cluster_Tags {
+        label = "Tags"
+        
+        tag_shortTagAllowed    [label="Short tag '<?' allowed"]
+        tag_shortTagNotAllowed [label="Short tag '<?' allowed"]
 
-		tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
-		tag_closingTagManditory  [label="Closing tag '?>' manditory"]
-		tag_closingTagNotAllowed [label="Closing tag '?>' not allowed"]
-	}//Tags
-	
-	
-	subgraph cluster_NameConventions {
-		label = "Naming Conventions"
+        tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
+        tag_closingTagManditory  [label="Closing tag '?>' manditory"]
+        tag_closingTagNotAllowed [label="Closing tag '?>' not allowed"]
+    }//Tags
+    
+    
+    subgraph cluster_NameConventions {
+        label = "Naming Conventions"
         /* Available Casing Styles are:
 
             camel       : camelCase         - camel case, first letter lowercase
@@ -86,18 +86,17 @@ digraph Standards {
 
         */
 
-    	subgraph cluster_ClassName {
-    		label = "Class Name"
-            name_class_camel       [label="camelCase"]
-            name_class_pascal      [label="PascalCase"]
-            name_class_snake       [label="snake_case"]
-            name_class_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_class_snakePascal [label="Snake_Pascal_Case"]
-        }//ClassName
+        subgraph cluster_ConstantName {
+            label = "Constant Name"
+            name_constant_camel       [label="camelCase"]
+            name_constant_pascal      [label="PascalCase"]
+            name_constant_snake       [label="snake_case"]
+            name_constant_snakeCaps   [label="CAPS_SNAKE_CASE"]
+            name_constant_snakePascal [label="Snake_Pascal_Case"]
+        }//ConstantName
 
-
-    	subgraph cluster_FunctionName {
-    		label = "Global Function Name"
+        subgraph cluster_FunctionName {
+            label = "Global Function Name"
             name_function_camel       [label="camelCase"]
             name_function_pascal      [label="PascalCase"]
             name_function_snake       [label="snake_case"]
@@ -106,8 +105,18 @@ digraph Standards {
         }//FunctionName
 
 
-    	subgraph cluster_classConstantName {
-    		label = "Class Constant Name"
+        subgraph cluster_ClassName {
+            label = "Class Name"
+            name_class_camel       [label="camelCase"]
+            name_class_pascal      [label="PascalCase"]
+            name_class_snake       [label="snake_case"]
+            name_class_snakeCaps   [label="CAPS_SNAKE_CASE"]
+            name_class_snakePascal [label="Snake_Pascal_Case"]
+        }//ClassName
+
+
+        subgraph cluster_classConstantName {
+            label = "Class Constant Name"
             name_classConstant_camel       [label="camelCase"]
             name_classConstant_pascal      [label="PascalCase"]
             name_classConstant_snake       [label="snake_case"]
@@ -116,8 +125,8 @@ digraph Standards {
         }//ClassConstantName
 
 
-    	subgraph cluster_classMethodName {
-    		label = "Class Method Name"
+        subgraph cluster_classMethodName {
+            label = "Class Method Name"
             name_classMethod_camel       [label="camelCase"]
             name_classMethod_pascal      [label="PascalCase"]
             name_classMethod_snake       [label="snake_case"]
@@ -125,8 +134,8 @@ digraph Standards {
             name_classMethod_snakePascal [label="Snake_Pascal_Case"]
         }//ClassMethodName
 
-    	subgraph cluster_classVariableName {
-    		label = "Class Variable Name"
+        subgraph cluster_classVariableName {
+            label = "Class Variable Name"
             name_classVariable_camel       [label="camelCase"]
             name_classVariable_pascal      [label="PascalCase"]
             name_classVariable_snake       [label="snake_case"]
@@ -134,44 +143,44 @@ digraph Standards {
             name_classVariable_snakePascal [label="Snake_Pascal_Case"]
         }//ClassVariableName
 
-	    subgraph cluster_Namespace {
-	        label="Namespace"
-        	namespace_proper [label="Use Namespace"]
-        	namespace_poorMans [label="Use Class/Functions Name instead of Namespace"]
+        subgraph cluster_Namespace {
+            label="Namespace"
+            namespace_proper [label="Use Namespace"]
+            namespace_poorMans [label="Use Class/Functions Name instead of Namespace"]
         }//Namespace
 
-    	subgraph cluster_PhpCasing {
+        subgraph cluster_PhpCasing {
             PhpKeywords_lowerCase  [label="PHP Keywords LowerCase (try/catch/if/switch/etc)"]
             PhpKeywords_upperCase  [label="PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)"]
 
             PhpConstants_lowerCase [label="PHP Constants LowerCase (true/false/null)"]
             PhpConstants_upperCase [label="PHP Constants UpperCase (TRUE/FALSE/NULL)"]
         }//PhpCasing
-	}//NameConventions
+    }//NameConventions
 
-	subgraph cluster_Whitespace {
-		label = "Whitespace"
-		
-	    subgraph cluster_Indentation {
-		    label = "Indentation"
+    subgraph cluster_Whitespace {
+        label = "Whitespace"
+        
+        subgraph cluster_Indentation {
+            label = "Indentation"
 
-	        subgraph cluster_General {
-	            label="General Indentation"
-		        indentation_tabs    [label="Tabs"]
-		        indentation_2spaces [label="2 Spaces"]
-		        indentation_4spaces [label="4 Spaces"]
+            subgraph cluster_General {
+                label="General Indentation"
+                indentation_tabs    [label="Tabs"]
+                indentation_2spaces [label="2 Spaces"]
+                indentation_4spaces [label="4 Spaces"]
             }//General
 
-	        subgraph cluster_SwitchIndentation {
-		        label = "Switch"
+            subgraph cluster_SwitchIndentation {
+                label = "Switch"
 
-		        indentation_switch_case_0   [label="Don`t indent 'case' from 'switch'"]
-		        indentation_switch_case_1   [label="Indent 'case' one level from 'switch'"]
-		        indentation_switch_case_2   [label="Indent 'case' two levels from 'switch'"]
-		
-		        indentation_switch_break_0   [label="Don`t indent 'break' from 'switch'"]
-		        indentation_switch_break_1   [label="Indent 'break' one level from 'switch'"]
-		        indentation_switch_break_2   [label="Indent 'break' two levels from 'switch'"]
+                indentation_switch_case_0   [label="Don`t indent 'case' from 'switch'"]
+                indentation_switch_case_1   [label="Indent 'case' one level from 'switch'"]
+                indentation_switch_case_2   [label="Indent 'case' two levels from 'switch'"]
+        
+                indentation_switch_break_0   [label="Don`t indent 'break' from 'switch'"]
+                indentation_switch_break_1   [label="Indent 'break' one level from 'switch'"]
+                indentation_switch_break_2   [label="Indent 'break' two levels from 'switch'"]
             }//SwitchIndentation
         }//Indentation
 
@@ -211,34 +220,50 @@ digraph Standards {
                              and 'elseif' keywords.
             */
 
-            brace_class_KandR [label="Class opening/closing braces on seperate line"]
+            subgraph cluster_ClassStructure {
+                label="Class"
+                brace_class_KandR   [label="Class opening/closing braces on seperate line"]
+                brace_class__OTBS   [label="Class structure opening/closing braces on same line as declaration"]
+            }
 
-            brace_method_KandR [label="Method opening/closing braces on seperate line"]
+            subgraph cluster_Method {
+                label="Function/Method"
+                brace_method_KandR  [label="Method opening/closing braces on seperate line"]
+                brace_method__OTBS  [label="Method structure opening/closing braces on same line as declaration"]
+            }
 
-            brace_controlStructure_OTBS [label="Control structure opening/closing braces on same line as declaration"]
-
-            brace_controlStructure_mandatory [label="Control structure braces are mandatory"]
+            subgraph cluster_ControlStructureBraces {
+                label="Control Structures"
+                brace_controlStructure_KandR        [label="Control structure opening/closing braces on seperate line"]
+                brace_controlStructure_OTBS         [label="Control structure opening/closing braces on same line as declaration, except for else/elseif"]
+                brace_controlStructure_Stroustrup   [label="Control structure opening/closing braces on same line as declaration, even for else/elseif"]
+                
+                brace_controlStructure_mandatory [label="Control structure braces are mandatory"]
+            }//ControlStructure
         }//Braces
 
-	    subgraph cluster_Spaces {
+        subgraph cluster_Spaces {
             label="Spaces"
 
-	        subgraph cluster_ControlStructure {
-    	        label="ControlStructure"
-                controlStructureKeyword_spaceAfter      [label="Space between control keyword and opening parenthesis"]
-                controlStructureKeyword_noSpaceAfter    [label="No space between control keyword and opening parenthesis"]
-	
-                controlStructureParentheses_spaces      [label="Space between control parenthesis and innards"]
-                controlStructureParentheses_noSpaces    [label="No space between control parenthesis and innards"]
+            subgraph cluster_ControlStructureSpaces {
+                label="Control Structures"
+                space_controlStructureKeyword_spaceAfter      [label="Space between control keyword and opening parenthesis"]
+                space_controlStructureKeyword_noSpaceAfter    [label="No space between control keyword and opening parenthesis"]
+    
+                space_controlStructureParentheses_spaces      [label="Space between control parenthesis and innards"]
+                space_controlStructureParentheses_noSpaces    [label="No space between control parenthesis and innards"]
             }//ControlStructure
 
-	        subgraph cluster_MethodName {
-	            label="Method Name"
-                methodName_spaceAfter   [label="Space between method name and opening parenthesis"]
-                methodName_noSpaceAfter [label="No space between method name and opening parenthesis"]
+            subgraph cluster_MethodName {
+                label="Functions/Methods"
+                space_methodName_spaceAfter   [label="Space between method name and opening parenthesis"]
+                space_methodName_noSpaceAfter [label="No space between method name and opening parenthesis"]
+
+                space_methodParamsBlock_spaceAfter   [label="Space after method parameter block and opening brace"]
+                space_methodParamsBlock_noSpaceAfter [label="No space after method parameter block and opening brace"]
             }//MethodName
         }//Spaces
-	}//Whitespace
+    }//Whitespace
 
     subgraph cluster_Comments {
         docblocks_mandatory [label="Docblocks manditory"]
@@ -246,34 +271,34 @@ digraph Standards {
     }//Comments
 
     subgraph cluster_DeclareOrder {
-	    label = "Method Declaration Order"
+        label = "Method Declaration Order"
 
-    	declareOrder_method_visibilityBeforeFinal   [label="abstract/final declared after visibility"]
-    	declareOrder_method_visibilityAfterFinal    [label="abstract/final declared before visibility"]
+        declareOrder_method_visibilityBeforeFinal   [label="abstract/final declared after visibility"]
+        declareOrder_method_visibilityAfterFinal    [label="abstract/final declared before visibility"]
 
-    	declareOrder_method_visibilityBeforeStatic  [label="static declared after visibility"]
-    	declareOrder_method_visibilityAfterStatic   [label="static declared before visibility"]
+        declareOrder_method_visibilityBeforeStatic  [label="static declared after visibility"]
+        declareOrder_method_visibilityAfterStatic   [label="static declared before visibility"]
     }//DeclareOrder
 
-	subgraph cluster_Miscellaneous {
-	    subgraph cluster_FileEncoding {
-	        label = "File Encoding"
-        	encoding_utf8       [label="UTF-8"]
-        	encoding_ISO_8859_1 [label="ISO-8859-1"]
+    subgraph cluster_Miscellaneous {
+        subgraph cluster_FileEncoding {
+            label = "File Encoding"
+            encoding_utf8       [label="UTF-8"]
+            encoding_ISO_8859_1 [label="ISO-8859-1"]
         }//FileEncoding
 
-	    subgraph cluster_ErrorLevel {
-	        label = "Error Level"
-	         //errorLevel_All [label="E_ALL"]
-	         errorLevel_Strict  [label="E_ALL | E_STRICT"]
+        subgraph cluster_ErrorLevel {
+            label = "Error Level"
+             //errorLevel_All [label="E_ALL"]
+             errorLevel_Strict  [label="E_ALL | E_STRICT"]
         }//ErrorLevel
 
-	    subgraph cluster_LineEnding {
-	        label = "Line Endings"
-        	lineEnding_any  [label="Whatever"]
-        	lineEnding_LF   [label="UNIX Style (LF)"]
-        	lineEnding_CR   [label="Mac Style (CR)"]
-        	lineEnding_LFCR [label="Windows Style (CRLF)"]
+        subgraph cluster_LineEnding {
+            label = "Line Endings"
+            lineEnding_any  [label="Whatever"]
+            lineEnding_LF   [label="UNIX Style (LF)"]
+            lineEnding_CR   [label="Mac Style (CR)"]
+            lineEnding_LFCR [label="Windows Style (CRLF)"]
         }//FileEncoding
     }//Miscellaneous
 
@@ -281,37 +306,55 @@ digraph Standards {
     edge [color="cornflowerblue"]
     PSR -> encoding_utf8
 
+/*
+ *  PEAR Conding Conventions
+ */
     edge [color="chartreuse4"]
-
-    PEAR -> indentation_4spaces
-    PEAR -> linelength_noHardLimit
-    PEAR -> linelength_softLimit85
-    PEAR -> brace_controlStructure_OTBS
-    PEAR -> indentation_switch_case_0
-    PEAR -> indentation_switch_break_1
-    PEAR -> brace_class_KandR
-    PEAR -> brace_method_KandR
-    PEAR -> docblocks_mandatory
-    PEAR -> tag_shortTagNotAllowed
-    PEAR -> name_function_pascal
-    PEAR -> namespace_poorMans
-    PEAR -> name_class_pascal
-    PEAR -> name_classMethod_camel
-    PEAR -> name_classVariable_camel
-    PEAR -> name_classConstant_snakeCaps
-    PEAR -> encoding_utf8
-    PEAR -> encoding_ISO_8859_1
-    PEAR -> lineEnding_LF
-    PEAR -> errorLevel_Strict
-    PEAR -> controlStructureKeyword_spaceAfter
+    PEAR -> indentation_4spaces:e
+    PEAR -> linelength_noHardLimit:e
+    PEAR -> linelength_softLimit85:e
+    PEAR -> brace_controlStructure_OTBS:e
+    PEAR -> indentation_switch_case_0:e
+    PEAR -> indentation_switch_break_1:e
+    PEAR -> brace_class_KandR:e
+    PEAR -> brace_method_KandR:e
+    PEAR -> docblocks_mandatory:e
+    PEAR -> tag_shortTagNotAllowed:e
+    PEAR -> name_function_pascal:e
+    PEAR -> namespace_poorMans:e
+    PEAR -> name_class_pascal:e
+    PEAR -> name_classMethod_camel:e
+    PEAR -> name_classVariable_camel:e
+    PEAR -> name_constant_snakeCaps:e
+    PEAR -> name_classConstant_snakeCaps:e
+    PEAR -> encoding_utf8:e
+    PEAR -> encoding_ISO_8859_1:e
+    PEAR -> lineEnding_LF:e
+    PEAR -> errorLevel_Strict:e
+    PEAR -> space_controlStructureKeyword_spaceAfter:e
 
 /*
-    PEAR ->
-    PEAR ->
-    PEAR ->
-    PEAR ->
-    PEAR ->
-*/
+ *  CAKE PHP Conding Conventions
+ */
+    edge [color="crimson"]
+    CAKE -> indentation_tabs:se
+    CAKE -> space_controlStructureKeyword_spaceAfter:se
+    CAKE -> space_controlStructureParentheses_spaces:se
+    CAKE -> brace_controlStructure_mandatory:se
+    CAKE -> brace_controlStructure_OTBS:se
+    CAKE -> brace_class_KandR:se
+    CAKE -> brace_method_KandR:se
+    CAKE -> space_methodName_noSpaceAfter:se
+    CAKE -> space_methodParamsBlock_spaceAfter:se
+    CAKE -> docblocks_optional:se
+    CAKE -> tag_shortTagNotAllowed:se
+    CAKE -> name_function_camel:se
+    CAKE -> name_classMethod_camel:se
+    CAKE -> name_class_pascal:se
+    CAKE -> name_classVariable_camel:se
+    CAKE -> name_classVariable_pascal:se
+    CAKE -> name_constant_snakeCaps:se
+    CAKE -> name_classConstant_snakeCaps:se
 }//Standards
 
 #EOF
