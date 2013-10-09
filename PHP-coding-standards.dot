@@ -54,12 +54,13 @@ digraph Standards {
         
         PSR     [label="PSR-2", fillcolor="cornflowerblue"]
         PEAR    [label="PEAR", fillcolor="chartreuse4"]
-        ZEND    [label="Zend"]
-        SYMFONY [label="Symfony"]
-        CAKE    [label="Cake PHP" fillcolor="crimson"] //red #d62738 or blue #417282
-        TYPO    [label="Typo/Flow 3"]
+        CAKE    [label="Cake PHP" fillcolor="crimson"]      //red #d62738 or blue #417282
+        CI      [label="CodeIgniter" fillcolor="orangered"] //orange #FF3C00
         HORDE   [label="Horde"]
+        SYMFONY [label="Symfony"]
+        TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
+        ZEND    [label="Zend"]
     }//Frameworks
 
     subgraph cluster_Tags {
@@ -107,11 +108,12 @@ digraph Standards {
 
         subgraph cluster_ClassName {
             label = "Class Name"
-            name_class_camel       [label="camelCase"]
-            name_class_pascal      [label="PascalCase"]
-            name_class_snake       [label="snake_case"]
-            name_class_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_class_snakePascal [label="Snake_Pascal_Case"]
+            name_class_camel        [label="camelCase"]
+            name_class_pascal       [label="PascalCase"]
+            name_class_snake        [label="snake_case"]
+            name_class_snakeCaps    [label="CAPS_SNAKE_CASE"]
+            name_class_snakePascal  [label="Snake_Pascal_Case"]
+            name_class_snake_UFirst [label="Snake_first_letter_uppercase"]
         }//ClassName
 
 
@@ -205,36 +207,53 @@ digraph Standards {
 
             /* Available Casing Styles are:
 
-                KandR       : K & R Style (Kernighan and Ritchie)
+                Allman      : Allman style
                              Both opening and closing braces on a seperates line
-                             from the class/method/control structure declaration
+                             from the class, method or control structure 
+                             declaration
                 OTBS        : "one true brace style"
                              The opening brace on the same line as the
-                             class/method/control structure declaration with the
-                             closing brace on a seperates line. Except for 'else'
-                             and 'elseif' keywords.
-                STROUSTRUP  : Bjarne Stroustrup's adaptation of K&R style
+                             class, method and control structure declaration 
+                             with the closing brace on a seperates line. Except 
+                             for 'else' and 'elseif' keywords.
+                Stroustrup  : Bjarne Stroustrup's adaptation of K&R style
                              The opening brace on the same line as the
                              class/method/control structure declaration with the
                              closing brace on a seperates line. Even for 'else'
-                             and 'elseif' keywords.
+                             and 'elseif' keywords. In this context it is only 
+                             used for control structures.
+                             
+                There is also K & R Style (Kernighan and Ritchie) but in the 
+                context of declaring each type seperately it doesn't really make 
+                sense to use it. It would the same as combining
+                
+                    - brace_class_Allman
+                    - brace_method_Allman
+                    - brace_controlStructure_ OTBS
+                
+                KandR       : K & R Style (Kernighan and Ritchie)
+                             Both opening and closing braces on a seperates line
+                             from the class and method declaration. The opening 
+                             brace for the control structure goes on the same 
+                             line as the declaration, the closing brace goes on 
+                             a seperate line, except for else/elsif/etc.
             */
 
             subgraph cluster_ClassStructure {
                 label="Class"
-                brace_class_KandR   [label="Class opening/closing braces on seperate line"]
-                brace_class__OTBS   [label="Class structure opening/closing braces on same line as declaration"]
+                brace_class_Allman  [label="Class opening/closing braces on seperate line"]
+                brace_class_OTBS    [label="Class structure opening/closing braces on same line as declaration"]
             }
 
             subgraph cluster_Method {
                 label="Function/Method"
-                brace_method_KandR  [label="Method opening/closing braces on seperate line"]
-                brace_method__OTBS  [label="Method structure opening/closing braces on same line as declaration"]
+                brace_method_Allman [label="Method opening/closing braces on seperate line"]
+                brace_method_OTBS   [label="Method structure opening/closing braces on same line as declaration"]
             }
 
             subgraph cluster_ControlStructureBraces {
                 label="Control Structures"
-                brace_controlStructure_KandR        [label="Control structure opening/closing braces on seperate line"]
+                brace_controlStructure_Allman       [label="Control structure opening/closing braces on seperate line"]
                 brace_controlStructure_OTBS         [label="Control structure opening/closing braces on same line as declaration, except for else/elseif"]
                 brace_controlStructure_Stroustrup   [label="Control structure opening/closing braces on same line as declaration, even for else/elseif"]
                 
@@ -316,8 +335,8 @@ digraph Standards {
     PEAR -> brace_controlStructure_OTBS:e
     PEAR -> indentation_switch_case_0:e
     PEAR -> indentation_switch_break_1:e
-    PEAR -> brace_class_KandR:e
-    PEAR -> brace_method_KandR:e
+    PEAR -> brace_class_Allman:e
+    PEAR -> brace_method_Allman:e
     PEAR -> docblocks_mandatory:e
     PEAR -> tag_shortTagNotAllowed:e
     PEAR -> name_function_pascal:e
@@ -342,8 +361,8 @@ digraph Standards {
     CAKE -> space_controlStructureParentheses_spaces:se
     CAKE -> brace_controlStructure_mandatory:se
     CAKE -> brace_controlStructure_OTBS:se
-    CAKE -> brace_class_KandR:se
-    CAKE -> brace_method_KandR:se
+    CAKE -> brace_class_Allman:se
+    CAKE -> brace_method_Allman:se
     CAKE -> space_methodName_noSpaceAfter:se
     CAKE -> space_methodParamsBlock_spaceAfter:se
     CAKE -> docblocks_optional:se
@@ -355,6 +374,7 @@ digraph Standards {
     CAKE -> name_classVariable_pascal:se
     CAKE -> name_constant_snakeCaps:se
     CAKE -> name_classConstant_snakeCaps:se
+
 }//Standards
 
 #EOF
