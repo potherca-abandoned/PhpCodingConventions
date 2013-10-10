@@ -23,6 +23,7 @@ docblocks_optional                          - Docblocks optional
 encoding_ISO_8859_1                         - ISO-8859-1
 encoding_utf8                               - UTF-8
 
+errorLevel_All                              - E_ALL
 errorLevel_Strict                           - E_ALL | E_STRICT
 
 indentation_2spaces                         - 2 Spaces
@@ -42,6 +43,7 @@ lineEnding_LFCR                             - Windows Style (CRLF)
 lineEnding_LF                               - UNIX Style (LF)
 
 linelength_HardLimit120                     - Hard limit on 120 characters
+linelength_HardLimit100                     - Hard limit on 100 characters
 linelength_HardLimit80                      - Hard limit on 80 characters
 linelength_noHardLimit                      - No hard limit on line length
 

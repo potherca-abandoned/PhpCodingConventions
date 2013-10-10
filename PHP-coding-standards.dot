@@ -55,10 +55,10 @@ digraph Standards {
         ];
         
         PSR     [label="PSR-2", fillcolor="cornflowerblue"]
-        PEAR    [label="PEAR", fillcolor="chartreuse4"]
-        CAKE    [label="Cake PHP" fillcolor="crimson"]      //red #d62738 or blue #417282
-        CI      [label="CodeIgniter" fillcolor="orangered"] //orange #FF3C00
-        HORDE   [label="Horde"]
+        PEAR    [label="PEAR", fillcolor="chartreuse4"]     // green    #4E9A06
+        CAKE    [label="Cake PHP" fillcolor="crimson"]      // red      #d62738 or blue #417282
+        CI      [label="CodeIgniter" fillcolor="orangered"] // orange   #FF3C00
+        HORDE   [label="Horde" fillcolor="royalblue3"]      // blue     #556aa1
         SYMFONY [label="Symfony"]
         TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
@@ -192,6 +192,7 @@ digraph Standards {
             label = "Line Length"
 
             linelength_HardLimit80  [label="Hard limit on 80 characters"]
+            linelength_HardLimit100 [label="Hard limit on 100 characters"]
             linelength_HardLimit120 [label="Hard limit on 120 characters"]
             linelength_noHardLimit  [label="No hard limit on line length"]
 
@@ -310,7 +311,7 @@ digraph Standards {
 
         subgraph cluster_ErrorLevel {
             label = "Error Level"
-             //errorLevel_All [label="E_ALL"]
+             errorLevel_All [label="E_ALL"]
              errorLevel_Strict  [label="E_ALL | E_STRICT"]
         }//ErrorLevel
 
@@ -324,7 +325,7 @@ digraph Standards {
     }//Miscellaneous
 
 /*
- *  CAKE PHP Conding Conventions
+ *  CAKE PHP Coding Conventions
  */
     edge [color="crimson"]
 
@@ -349,7 +350,7 @@ digraph Standards {
 /*CAKE*/
 
 /*
- *  Code Igniter Conding Conventions
+ *  Code Igniter Coding Conventions
  */
     edge [color="orangered"]
 
@@ -371,7 +372,31 @@ digraph Standards {
 /*Code Igniter*/
 
 /*
- *  PEAR Conding Conventions
+ *  HORDE Coding Conventions
+ */
+    edge [color="royalblue3"]
+
+    HORDE -> indentation_4spaces
+    HORDE -> PhpConstants_lowerCase
+    HORDE -> brace_controlStructure_OTBS
+    HORDE -> space_controlStructureKeyword_spaceAfter
+    HORDE -> brace_controlStructure_mandatory
+    HORDE -> indentation_switch_case_0
+    HORDE -> indentation_switch_break_1
+    HORDE -> space_methodName_noSpaceAfter
+    HORDE -> brace_method_Allman
+    HORDE -> brace_class_Allman
+    HORDE -> docblocks_mandatory
+    HORDE -> tag_shortTagNotAllowed
+    HORDE -> tag_closingTagNotAllowed
+    HORDE -> linelength_HardLimit100
+    HORDE -> linelength_softLimit80
+    HORDE -> lineEnding_LF
+    HORDE -> errorLevel_All
+/*HORDE*/
+
+/*
+ *  PEAR Coding Conventions
  */
     edge [color="chartreuse4"]
     
@@ -400,7 +425,7 @@ digraph Standards {
 /*PEAR*/
 
 /*
- *  PSR2 Conding Conventions
+ *  PSR2 Coding Conventions
  */
     edge [color="cornflowerblue"]
 

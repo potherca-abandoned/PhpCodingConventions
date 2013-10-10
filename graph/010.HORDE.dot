@@ -1,0 +1,24 @@
+/*
+ *  HORDE Coding Conventions
+ */
+    edge [color="royalblue3"]
+
+    HORDE -> indentation_4spaces
+    HORDE -> PhpConstants_lowerCase
+    HORDE -> brace_controlStructure_OTBS
+    HORDE -> space_controlStructureKeyword_spaceAfter
+    HORDE -> brace_controlStructure_mandatory
+    HORDE -> indentation_switch_case_0
+    HORDE -> indentation_switch_break_1
+    HORDE -> space_methodName_noSpaceAfter
+    HORDE -> brace_method_Allman
+    HORDE -> brace_class_Allman
+    HORDE -> docblocks_mandatory
+    HORDE -> tag_shortTagNotAllowed
+    HORDE -> tag_closingTagNotAllowed
+    HORDE -> linelength_HardLimit100
+    HORDE -> linelength_softLimit80
+    HORDE -> lineEnding_LF
+    HORDE -> errorLevel_All
+/*HORDE*/
+

@@ -13,10 +13,10 @@
         ];
         
         PSR     [label="PSR-2", fillcolor="cornflowerblue"]
-        PEAR    [label="PEAR", fillcolor="chartreuse4"]
-        CAKE    [label="Cake PHP" fillcolor="crimson"]      //red #d62738 or blue #417282
-        CI      [label="CodeIgniter" fillcolor="orangered"] //orange #FF3C00
-        HORDE   [label="Horde"]
+        PEAR    [label="PEAR", fillcolor="chartreuse4"]     // green    #4E9A06
+        CAKE    [label="Cake PHP" fillcolor="crimson"]      // red      #d62738 or blue #417282
+        CI      [label="CodeIgniter" fillcolor="orangered"] // orange   #FF3C00
+        HORDE   [label="Horde" fillcolor="royalblue3"]      // blue     #556aa1
         SYMFONY [label="Symfony"]
         TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
@@ -150,6 +150,7 @@
             label = "Line Length"
 
             linelength_HardLimit80  [label="Hard limit on 80 characters"]
+            linelength_HardLimit100 [label="Hard limit on 100 characters"]
             linelength_HardLimit120 [label="Hard limit on 120 characters"]
             linelength_noHardLimit  [label="No hard limit on line length"]
 
@@ -268,7 +269,7 @@
 
         subgraph cluster_ErrorLevel {
             label = "Error Level"
-             //errorLevel_All [label="E_ALL"]
+             errorLevel_All [label="E_ALL"]
              errorLevel_Strict  [label="E_ALL | E_STRICT"]
         }//ErrorLevel
 
