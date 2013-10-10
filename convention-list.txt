@@ -30,12 +30,13 @@ indentation_2spaces                         - 2 Spaces
 indentation_4spaces                         - 4 Spaces
 indentation_tabs                            - Tabs
 
-indentation_switch_break_0                  - Don`t indent 'break' from 'switch'
-indentation_switch_break_1                  - Indent 'break' one level from 'switch'
-indentation_switch_break_2                  - Indent 'break' two levels from 'switch'
 indentation_switch_case_0                   - Don`t indent 'case' from 'switch'
 indentation_switch_case_1                   - Indent 'case' one level from 'switch'
 indentation_switch_case_2                   - Indent 'case' two levels from 'switch'
+
+indentation_switch_break_0                  - Don`t indent 'break' from 'switch'
+indentation_switch_break_1                  - Indent 'break' one level from 'switch'
+indentation_switch_break_2                  - Indent 'break' two levels from 'switch'
 
 lineEnding_any                              - Whatever
 lineEnding_CR                               - Mac Style (CR)
@@ -122,11 +123,10 @@ tag_shortTagNotAllowed                      - Short tag '<?' not allowed
 
 @FIXME: We're going to have to add a lot of "Don't care" labels for various subgraphs. (look for orphan blocks in the PNG)
 
-@TODO:  Maybe we should also add a "Not Defined" label for each section to clarify (and make sure all sections have been checked?)
+@TODO:  Maybe we should also add a "Not Defined" or "Not Mentioned" label for each section to clarify (and make sure all sections have been checked?)
 
 @TODO: Usage of include_once versus require_once?
 @TODO: Usage of underscore '_' for private/protected properties? (PSR explicitly says no, some others explicitly say yes. Could be interesting to see?)
 @TODO: Conventions for file names?
-
 
 #EOF
