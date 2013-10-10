@@ -1,0 +1,28 @@
+    subgraph cluster_Frameworks {
+
+        label = "Frameworks"
+        style="filled,rounded"
+        fontcolor=white
+        color=red
+        fillcolor=orange
+
+        node [
+            style="filled,rounded"
+            shape=box
+            color=white
+            fontcolor=white
+        ];
+        
+        //CODE      Actual Name             
+        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
+        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
+        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
+        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
+        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
+        SYMFONY [label="Symfony"]
+        TYPO    [label="Typo/Flow 3"]
+        WP      [label="WordPress"]
+        ZEND    [label="Zend"]
+    }//Frameworks
+
+

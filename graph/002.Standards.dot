@@ -1,29 +1,3 @@
-    subgraph cluster_Frameworks {
-        label = "Frameworks"
-        style="filled,rounded"
-        fontcolor=white
-        color=red
-        fillcolor=orange
-
-        node [
-            style="filled,rounded"
-            shape=box
-            color=white
-            fontcolor=white
-        ];
-        
-        //CODE      Actual Name             
-        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
-        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
-        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
-        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
-        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
-        SYMFONY [label="Symfony"]
-        TYPO    [label="Typo/Flow 3"]
-        WP      [label="WordPress"]
-        ZEND    [label="Zend"]
-    }//Frameworks
-
     subgraph cluster_Tags {
         label = "Tags"
         
@@ -107,6 +81,7 @@
             name_classVariable_snake       [label="snake_case"]
             name_classVariable_snakeCaps   [label="CAPS_SNAKE_CASE"]
             name_classVariable_snakePascal [label="Snake_Pascal_Case"]
+            name_classVariable_any         [label="Anything you like"]
         }//ClassVariableName
 
         subgraph cluster_Namespace {
