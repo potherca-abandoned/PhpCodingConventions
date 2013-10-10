@@ -1,13 +1,14 @@
-brace_class_Allman                           - Class opening/closing braces on seperate line
-brace_class_OTBS                           - Class structure opening/closing braces on same line as declaration
+brace_class_Allman                          - Class opening/closing braces on seperate line
+brace_class_OTBS                            - Class structure opening/closing braces on same line as declaration
 
-brace_controlStructure_Allman                - Control structure opening/closing braces on seperate line
-brace_controlStructure_mandatory            - Control structure braces are mandatory
+brace_controlStructure_Allman               - Control structure opening/closing braces on seperate line
 brace_controlStructure_OTBS                 - Control structure opening/closing braces on same line as declaration, except for else/elseif
 brace_controlStructure_Stroustrup           - Control structure opening/closing braces on same line as declaration, even for else/elseif
 
-brace_method_Allman                          - Method opening/closing braces on seperate line
-brace_method_OTBS                          - Method structure opening/closing braces on same line as declaration
+brace_controlStructure_mandatory            - Control structure braces are mandatory
+
+brace_method_Allman                         - Method opening/closing braces on seperate line
+brace_method_OTBS                           - Method structure opening/closing braces on same line as declaration
 
 classAndCrew_sameLine                       - Class keywords (extends/implements) on the same line as class name
 
