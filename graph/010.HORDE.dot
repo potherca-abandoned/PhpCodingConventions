@@ -1,7 +1,10 @@
 /*
  *  HORDE Coding Conventions
  */
-    edge [color="#556aa1"]
+    edge [
+        color="#556aa1"
+        arrowhead="box"
+    ]
 
     HORDE -> indentation_4spaces
     HORDE -> PhpConstants_lowerCase

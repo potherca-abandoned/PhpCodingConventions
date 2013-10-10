@@ -1,7 +1,10 @@
 /*
  *  PEAR Coding Conventions
  */
-    edge [color="#4e9a06"]
+    edge [
+        color="#4e9a06"
+        arrowhead="dot"
+    ]
     
     PEAR -> indentation_4spaces
     PEAR -> linelength_noHardLimit

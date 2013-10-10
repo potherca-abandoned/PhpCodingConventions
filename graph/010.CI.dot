@@ -1,7 +1,10 @@
 /*
  *  Code Igniter Coding Conventions
  */
-    edge [color="#ff3c00"]
+    edge [
+        color="#ff3c00"
+        arrowhead="diamond"
+    ]
 
     CI -> encoding_utf8
     CI -> tag_closingTagNotAllowed

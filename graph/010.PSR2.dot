@@ -1,7 +1,10 @@
 /*
  *  PSR2 Coding Conventions
  */
-    edge [color="#2e7bcf"]
+    edge [
+        color="#2e7bcf"
+        arrowhead = "onormal"
+    ]
 
     // PSR-0
     PSR -> namespace_proper

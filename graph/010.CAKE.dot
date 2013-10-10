@@ -1,7 +1,10 @@
 /*
  *  CAKE PHP Coding Conventions
  */
-    edge [color="#d62738"]
+    edge [
+        color="#d62738"
+        arrowhead="normal"
+    ]
 
     CAKE -> indentation_tabs
     CAKE -> space_controlStructureKeyword_spaceAfter
