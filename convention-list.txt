@@ -76,6 +76,7 @@ name_classVariable_pascal                   - PascalCase
 name_classVariable_snakeCaps                - CAPS_SNAKE_CASE
 name_classVariable_snake                    - snake_case
 name_classVariable_snakePascal              - Snake_Pascal_Case
+name_classVariable_any                     - Anything you like
 
 name_constant_camel                         - camelCase
 name_constant_pascal                        - PascalCase
@@ -113,14 +114,18 @@ tag_closingTagAllowed                       - Closing tag '?>' allowed
 tag_closingTagManditory                     - Closing tag '?>' manditory
 tag_closingTagNotAllowed                    - Closing tag '?>' not allowed
 
-tag_shortTagAllowed                         - Short tag '<?' allowed
-tag_shortTagNotAllowed                      - Short tag '<?' allowed
+tag_shortEchoTagAllowed                     - Short tag '<?=' allowed
+tag_shortEchoTagNotAllowed                  - Short tag '<?=' not allowed
 
+tag_shortTagAllowed                         - Short tag '<?' allowed
+tag_shortTagNotAllowed                      - Short tag '<?' not allowed
 
 @FIXME: We're going to have to add a lot of "Don't care" labels for various subgraphs. (look for orphan blocks in the PNG)
 
+@TODO:  Maybe we should also add a "Not Defined" label for each section to clarify (and make sure all sections have been checked?)
+
 @TODO: Usage of include_once versus require_once?
-@TODO: Usage of underscore '_' for private/protected properties?
+@TODO: Usage of underscore '_' for private/protected properties? (PSR explicitly says no, some others explicitly say yes. Could be interesting to see?)
 @TODO: Conventions for file names?
 
 
