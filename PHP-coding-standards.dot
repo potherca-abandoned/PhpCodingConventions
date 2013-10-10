@@ -149,6 +149,7 @@ digraph Standards {
             name_classVariable_snake       [label="snake_case"]
             name_classVariable_snakeCaps   [label="CAPS_SNAKE_CASE"]
             name_classVariable_snakePascal [label="Snake_Pascal_Case"]
+            name_classVariable_any         [label="Anything you like"]
         }//ClassVariableName
 
         subgraph cluster_Namespace {
@@ -427,6 +428,45 @@ digraph Standards {
     PEAR -> errorLevel_Strict
     PEAR -> space_controlStructureKeyword_spaceAfter
 /*PEAR*/
+
+/*
+ *  PSR2 Coding Conventions
+ */
+    edge [color="#2e7bcf"]
+
+    // PSR-0
+    PSR -> namespace_proper
+    
+    // PSR-1
+    PSR -> encoding_utf8
+    PSR -> tag_shortEchoTagAllowed
+    PSR -> tag_shortTagNotAllowed
+    PSR -> name_class_pascal
+    PSR -> name_classConstant_snakeCaps
+    PSR -> name_classMethod_camel
+    PSR -> tag_shortEchoTagAllowed
+    PSR -> tag_shortTagNotAllowed
+    PSR -> name_classVariable_any
+    
+    // PSR-2
+    PSR -> indentation_4spaces
+    PSR -> linelength_softLimit120
+    PSR -> linelength_noHardLimit
+    PSR -> brace_class_Allman
+    PSR -> brace_method_Allman
+    PSR -> declareOrder_method_visibilityAfterStatic
+    PSR -> declareOrder_method_visibilityBeforeStatic
+    PSR -> space_controlStructureKeyword_spaceAfter
+    PSR -> space_methodName_noSpaceAfter
+    PSR -> brace_controlStructure_OTBS
+    PSR -> lineEnding_LF
+    PSR -> tag_closingTagNotAllowed
+    PSR -> PhpConstants_lowerCase
+    PSR -> classAndCrew_sameLine
+    PSR -> space_controlStructureParentheses_spaces
+    PSR -> indentation_switch_case_1
+    PSR -> indentation_switch_break_2
+/*PSR2*/
 
 }//Standards
 
