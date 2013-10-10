@@ -349,6 +349,28 @@ digraph Standards {
 /*CAKE*/
 
 /*
+ *  Code Igniter Conding Conventions
+ */
+    edge [color="orangered"]
+
+    CI -> encoding_utf8
+    CI -> tag_closingTagNotAllowed
+    CI -> name_class_snake_UFirst
+    CI -> name_classMethod_snake
+    CI -> name_classVariable_snake
+    CI -> docblocks_optional
+    CI -> name_classConstant_snakeCaps
+    CI -> name_constant_snakeCaps
+    CI -> PhpConstants_upperCase
+    CI -> indentation_tabs
+    CI -> lineEnding_LF
+    CI -> brace_class_OTBS
+    CI -> brace_method_Allman
+    CI -> brace_controlStructure_Allman
+    CI -> tag_shortTagNotAllowed
+/*Code Igniter*/
+
+/*
  *  PEAR Conding Conventions
  */
     edge [color="chartreuse4"]
@@ -384,7 +406,7 @@ digraph Standards {
 
     PSR -> encoding_utf8
 /*PSR2*/
-    
+
 }//Standards
 
 #EOF
