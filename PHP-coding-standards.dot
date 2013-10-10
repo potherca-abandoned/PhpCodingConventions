@@ -40,32 +40,7 @@ digraph Standards {
     ];
 
 
-    subgraph cluster_Frameworks {
-        label = "Frameworks"
-        style="filled,rounded"
-        fontcolor=white
-        color=red
-        fillcolor=orange
-
-        node [
-            style="filled,rounded"
-            shape=box
-            color=white
-            fontcolor=white
-        ];
-        
-        //CODE      Actual Name             
-        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
-        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
-        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
-        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
-        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
-        SYMFONY [label="Symfony"]
-        TYPO    [label="Typo/Flow 3"]
-        WP      [label="WordPress"]
-        ZEND    [label="Zend"]
-    }//Frameworks
-
+subgraph cluster_Conventions {
     subgraph cluster_Tags {
         label = "Tags"
         
@@ -328,11 +303,42 @@ digraph Standards {
             lineEnding_LFCR [label="Windows Style (CRLF)"]
         }//FileEncoding
     }//Miscellaneous
+}//Conventions
+    subgraph cluster_Frameworks {
+
+        label = "Frameworks"
+        style="filled,rounded"
+        fontcolor=white
+        color=red
+        fillcolor=orange
+
+        node [
+            style="filled,rounded"
+            shape=box
+            color=white
+            fontcolor=white
+        ];
+        
+        //CODE      Actual Name             
+        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
+        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
+        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
+        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
+        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
+        SYMFONY [label="Symfony"]
+        TYPO    [label="Typo/Flow 3"]
+        WP      [label="WordPress"]
+        ZEND    [label="Zend"]
+    }//Frameworks
+
 
 /*
  *  CAKE PHP Coding Conventions
  */
-    edge [color="#d62738"]
+    edge [
+        color="#d62738"
+        arrowhead="normal"
+    ]
 
     CAKE -> indentation_tabs
     CAKE -> space_controlStructureKeyword_spaceAfter
@@ -357,7 +363,10 @@ digraph Standards {
 /*
  *  Code Igniter Coding Conventions
  */
-    edge [color="#ff3c00"]
+    edge [
+        color="#ff3c00"
+        arrowhead="diamond"
+    ]
 
     CI -> encoding_utf8
     CI -> tag_closingTagNotAllowed
@@ -379,7 +388,10 @@ digraph Standards {
 /*
  *  HORDE Coding Conventions
  */
-    edge [color="#556aa1"]
+    edge [
+        color="#556aa1"
+        arrowhead="box"
+    ]
 
     HORDE -> indentation_4spaces
     HORDE -> PhpConstants_lowerCase
@@ -403,7 +415,10 @@ digraph Standards {
 /*
  *  PEAR Coding Conventions
  */
-    edge [color="#4e9a06"]
+    edge [
+        color="#4e9a06"
+        arrowhead="dot"
+    ]
     
     PEAR -> indentation_4spaces
     PEAR -> linelength_noHardLimit
@@ -432,7 +447,10 @@ digraph Standards {
 /*
  *  PSR2 Coding Conventions
  */
-    edge [color="#2e7bcf"]
+    edge [
+        color="#2e7bcf"
+        arrowhead = "onormal"
+    ]
 
     // PSR-0
     PSR -> namespace_proper
