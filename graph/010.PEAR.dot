@@ -1,0 +1,29 @@
+/*
+ *  PEAR Conding Conventions
+ */
+    edge [color="chartreuse4"]
+    
+    PEAR -> indentation_4spaces
+    PEAR -> linelength_noHardLimit
+    PEAR -> linelength_softLimit85
+    PEAR -> brace_controlStructure_OTBS
+    PEAR -> indentation_switch_case_0
+    PEAR -> indentation_switch_break_1
+    PEAR -> brace_class_Allman
+    PEAR -> brace_method_Allman
+    PEAR -> docblocks_mandatory
+    PEAR -> tag_shortTagNotAllowed
+    PEAR -> name_function_pascal
+    PEAR -> namespace_poorMans
+    PEAR -> name_class_pascal
+    PEAR -> name_classMethod_camel
+    PEAR -> name_classVariable_camel
+    PEAR -> name_constant_snakeCaps
+    PEAR -> name_classConstant_snakeCaps
+    PEAR -> encoding_utf8
+    PEAR -> encoding_ISO_8859_1
+    PEAR -> lineEnding_LF
+    PEAR -> errorLevel_Strict
+    PEAR -> space_controlStructureKeyword_spaceAfter
+/*PEAR*/
+

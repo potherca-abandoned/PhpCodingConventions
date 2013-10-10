@@ -1,4 +1,4 @@
- - CakePhp      [↗](http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html)
+ - <del>CakePhp</del>      [↗](http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html)
  - CodeIgniter  [↗](http://ellislab.com/codeigniter/user-guide/general/styleguide.html)
  - FIG          [↗](http://www.php-fig.org/psr/2)
  - HORDE        [↗](http://www.horde.org/apps/horde/docs/?f=CODING_STANDARDS.html)

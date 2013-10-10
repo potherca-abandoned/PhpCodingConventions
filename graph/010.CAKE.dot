@@ -1,0 +1,25 @@
+/*
+ *  CAKE PHP Conding Conventions
+ */
+    edge [color="crimson"]
+
+    CAKE -> indentation_tabs
+    CAKE -> space_controlStructureKeyword_spaceAfter
+    CAKE -> space_controlStructureParentheses_spaces
+    CAKE -> brace_controlStructure_mandatory
+    CAKE -> brace_controlStructure_OTBS
+    CAKE -> brace_class_Allman
+    CAKE -> brace_method_Allman
+    CAKE -> space_methodName_noSpaceAfter
+    CAKE -> space_methodParamsBlock_spaceAfter
+    CAKE -> docblocks_optional
+    CAKE -> tag_shortTagNotAllowed
+    CAKE -> name_function_camel
+    CAKE -> name_classMethod_camel
+    CAKE -> name_class_pascal
+    CAKE -> name_classVariable_camel
+    CAKE -> name_classVariable_pascal
+    CAKE -> name_constant_snakeCaps
+    CAKE -> name_classConstant_snakeCaps
+/*CAKE*/
+

@@ -1,0 +1,37 @@
+/*
+    https://gist.github.com/potherca/6741287
+
+    http://www.graphviz.org/doc/info/lang.html
+    http://www.graphviz.org/doc/info/attrs.html
+
+    http://graphviz-dev.appspot.com/
+
+*/
+digraph Standards {
+
+    splines = true    
+    clusterrank = "local"
+    //compound = true
+
+    center = true
+    //ratio = "fill"
+    //orientation = "landscape"
+    root="HORDE"
+    //ratio=1
+    
+    //autosize=false;
+    //size="8.267,11.692";
+    //resolution=2;    
+    //resolution=2400;    
+    
+    node [
+            center = true
+            shape = "box"
+            style = "rounded"
+    ];
+    
+    edge [
+        //constraint = "false"
+    ];
+
+

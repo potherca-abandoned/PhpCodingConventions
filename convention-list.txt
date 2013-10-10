@@ -1,11 +1,13 @@
-brace_class_KandR                           - Class opening/closing braces on seperate line
-brace_class__OTBS                           - Class structure opening/closing braces on same line as declaration
-brace_controlStructure_KandR                - Control structure opening/closing braces on seperate line
+brace_class_Allman                           - Class opening/closing braces on seperate line
+brace_class_OTBS                           - Class structure opening/closing braces on same line as declaration
+
+brace_controlStructure_Allman                - Control structure opening/closing braces on seperate line
 brace_controlStructure_mandatory            - Control structure braces are mandatory
 brace_controlStructure_OTBS                 - Control structure opening/closing braces on same line as declaration, except for else/elseif
 brace_controlStructure_Stroustrup           - Control structure opening/closing braces on same line as declaration, even for else/elseif
-brace_method_KandR                          - Method opening/closing braces on seperate line
-brace_method__OTBS                          - Method structure opening/closing braces on same line as declaration
+
+brace_method_Allman                          - Method opening/closing braces on seperate line
+brace_method_OTBS                          - Method structure opening/closing braces on same line as declaration
 
 classAndCrew_sameLine                       - Class keywords (extends/implements) on the same line as class name
 
@@ -51,6 +53,7 @@ name_class_camel                            - camelCase
 name_class_pascal                           - PascalCase
 name_class_snakeCaps                        - CAPS_SNAKE_CASE
 name_class_snake                            - snake_case
+name_class_snake_UFirst                     - Snake_first_letter_uppercase
 name_class_snakePascal                      - Snake_Pascal_Case
 
 name_classConstant_camel                    - camelCase
