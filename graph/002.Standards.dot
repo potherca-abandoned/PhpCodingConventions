@@ -12,11 +12,12 @@
             fontcolor=white
         ];
         
-        PSR     [label="PSR-2", fillcolor="cornflowerblue"]
-        PEAR    [label="PEAR", fillcolor="chartreuse4"]     // green    #4E9A06
-        CAKE    [label="Cake PHP" fillcolor="crimson"]      // red      #d62738 or blue #417282
-        CI      [label="CodeIgniter" fillcolor="orangered"] // orange   #FF3C00
-        HORDE   [label="Horde" fillcolor="royalblue3"]      // blue     #556aa1
+        //CODE      Actual Name             
+        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
+        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
+        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
+        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
+        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
         SYMFONY [label="Symfony"]
         TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
@@ -27,7 +28,10 @@
         label = "Tags"
         
         tag_shortTagAllowed    [label="Short tag '<?' allowed"]
-        tag_shortTagNotAllowed [label="Short tag '<?' allowed"]
+        tag_shortTagNotAllowed [label="Short tag '<?' not allowed"]
+
+        tag_shortEchoTagAllowed    [label="Short tag '<?=' allowed"]
+        tag_shortEchoTagNotAllowed [label="Short tag '<?=' not allowed"]
 
         tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
         tag_closingTagManditory  [label="Closing tag '?>' manditory"]

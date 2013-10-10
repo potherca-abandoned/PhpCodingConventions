@@ -1,7 +1,7 @@
 /*
  *  PEAR Coding Conventions
  */
-    edge [color="chartreuse4"]
+    edge [color="#4e9a06"]
     
     PEAR -> indentation_4spaces
     PEAR -> linelength_noHardLimit

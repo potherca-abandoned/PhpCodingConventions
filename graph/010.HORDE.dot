@@ -1,7 +1,7 @@
 /*
  *  HORDE Coding Conventions
  */
-    edge [color="royalblue3"]
+    edge [color="#556aa1"]
 
     HORDE -> indentation_4spaces
     HORDE -> PhpConstants_lowerCase

@@ -54,11 +54,12 @@ digraph Standards {
             fontcolor=white
         ];
         
-        PSR     [label="PSR-2", fillcolor="cornflowerblue"]
-        PEAR    [label="PEAR", fillcolor="chartreuse4"]     // green    #4E9A06
-        CAKE    [label="Cake PHP" fillcolor="crimson"]      // red      #d62738 or blue #417282
-        CI      [label="CodeIgniter" fillcolor="orangered"] // orange   #FF3C00
-        HORDE   [label="Horde" fillcolor="royalblue3"]      // blue     #556aa1
+        //CODE      Actual Name             
+        PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
+        PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
+        CAKE    [label="Cake PHP"    fillcolor="#d62738"]   // red      or blue #417282
+        CI      [label="CodeIgniter" fillcolor="#ff3c00"]   // orange
+        HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
         SYMFONY [label="Symfony"]
         TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
@@ -69,7 +70,10 @@ digraph Standards {
         label = "Tags"
         
         tag_shortTagAllowed    [label="Short tag '<?' allowed"]
-        tag_shortTagNotAllowed [label="Short tag '<?' allowed"]
+        tag_shortTagNotAllowed [label="Short tag '<?' not allowed"]
+
+        tag_shortEchoTagAllowed    [label="Short tag '<?=' allowed"]
+        tag_shortEchoTagNotAllowed [label="Short tag '<?=' not allowed"]
 
         tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
         tag_closingTagManditory  [label="Closing tag '?>' manditory"]
@@ -327,7 +331,7 @@ digraph Standards {
 /*
  *  CAKE PHP Coding Conventions
  */
-    edge [color="crimson"]
+    edge [color="#d62738"]
 
     CAKE -> indentation_tabs
     CAKE -> space_controlStructureKeyword_spaceAfter
@@ -352,7 +356,7 @@ digraph Standards {
 /*
  *  Code Igniter Coding Conventions
  */
-    edge [color="orangered"]
+    edge [color="#ff3c00"]
 
     CI -> encoding_utf8
     CI -> tag_closingTagNotAllowed
@@ -374,7 +378,7 @@ digraph Standards {
 /*
  *  HORDE Coding Conventions
  */
-    edge [color="royalblue3"]
+    edge [color="#556aa1"]
 
     HORDE -> indentation_4spaces
     HORDE -> PhpConstants_lowerCase
@@ -398,7 +402,7 @@ digraph Standards {
 /*
  *  PEAR Coding Conventions
  */
-    edge [color="chartreuse4"]
+    edge [color="#4e9a06"]
     
     PEAR -> indentation_4spaces
     PEAR -> linelength_noHardLimit
@@ -423,14 +427,6 @@ digraph Standards {
     PEAR -> errorLevel_Strict
     PEAR -> space_controlStructureKeyword_spaceAfter
 /*PEAR*/
-
-/*
- *  PSR2 Coding Conventions
- */
-    edge [color="cornflowerblue"]
-
-    PSR -> encoding_utf8
-/*PSR2*/
 
 }//Standards
 
