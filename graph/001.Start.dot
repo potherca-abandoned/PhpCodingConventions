@@ -9,20 +9,8 @@
 */
 digraph Standards {
 
-    splines = true    
-    clusterrank = "local"
-    //compound = true
-
+    splines = ortho    
     center = true
-    //ratio = "fill"
-    //orientation = "landscape"
-    root="HORDE"
-    //ratio=1
-    
-    //autosize=false;
-    //size="8.267,11.692";
-    //resolution=2;    
-    //resolution=2400;    
     
     node [
             center = true
@@ -31,7 +19,7 @@ digraph Standards {
     ];
     
     edge [
-        //constraint = "false"
+        // The default style is fine
     ];
 
 
