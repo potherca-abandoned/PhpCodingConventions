@@ -14,29 +14,25 @@
 */
 digraph Standards {
 
-    splines = true    
-    clusterrank = "local"
-    //compound = true
-
+    splines = ortho    
     center = true
-    //ratio = "fill"
-    //orientation = "landscape"
-    root="HORDE"
-    //ratio=1
     
-    //autosize=false;
-    //size="8.267,11.692";
-    //resolution=2;    
-    //resolution=2400;    
-    
+    compound=true;
+    remincross=true;
+
     node [
             center = true
             shape = "box"
             style = "rounded"
+            //fixedsize = true
+            //width = 2
+            //height = 2
+            ratio="compress"
     ];
     
     edge [
-        //constraint = "false"
+         //style="dashed"
+         len = 1
     ];
 
 
@@ -325,7 +321,7 @@ subgraph cluster_Conventions {
         HORDE   [label="Horde"       fillcolor="#556aa1"]   // blue
         PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
         PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
-        SYMFONY [label="Symfony"]
+        SYMFONY [label="Symfony"     fillcolor="#303030"]   // black
         TYPO    [label="Typo/Flow 3"]
         WP      [label="WordPress"]
         ZEND    [label="Zend"]
@@ -485,6 +481,50 @@ subgraph cluster_Conventions {
     PSR -> indentation_switch_case_1
     PSR -> indentation_switch_break_2
 /*PSR2*/
+
+/*
+ *  SYMFONY2 Coding Conventions
+ */
+    edge [
+        color="#303030"
+        arrowhead = "odiamond"
+    ]
+/*/
+    SYMFONY -> PSR
+/*/
+    // PSR-0
+    SYMFONY -> namespace_proper
+
+    // PSR-1
+    SYMFONY -> encoding_utf8
+    SYMFONY -> tag_shortEchoTagAllowed
+    SYMFONY -> tag_shortTagNotAllowed
+    SYMFONY -> name_class_pascal
+    SYMFONY -> name_classConstant_snakeCaps
+    SYMFONY -> name_classMethod_camel
+    SYMFONY -> tag_shortEchoTagAllowed
+    SYMFONY -> tag_shortTagNotAllowed
+    SYMFONY -> name_classVariable_any
+    
+    // PSR-2
+    SYMFONY -> indentation_4spaces
+    SYMFONY -> linelength_softLimit120
+    SYMFONY -> linelength_noHardLimit
+    SYMFONY -> brace_class_Allman
+    SYMFONY -> brace_method_Allman
+    SYMFONY -> declareOrder_method_visibilityAfterStatic
+    SYMFONY -> declareOrder_method_visibilityBeforeStatic
+    SYMFONY -> space_controlStructureKeyword_spaceAfter
+    SYMFONY -> space_methodName_noSpaceAfter
+    SYMFONY -> brace_controlStructure_OTBS
+    SYMFONY -> lineEnding_LF
+    SYMFONY -> tag_closingTagNotAllowed
+    SYMFONY -> PhpConstants_lowerCase
+    SYMFONY -> classAndCrew_sameLine
+    SYMFONY -> space_controlStructureParentheses_spaces
+    SYMFONY -> indentation_switch_case_1
+    SYMFONY -> indentation_switch_break_2
+/*SYMFONY2*/
 
 }//Standards
 
