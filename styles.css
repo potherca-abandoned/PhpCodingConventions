@@ -1,0 +1,33 @@
+
+    h1 {
+        text-shadow: 0 0 0.2em #268bd2;
+    }
+    
+    img {
+        width:100%
+    }
+    
+    [TODO]:before {
+        content: "TODO: ";
+        border-bottom: 1px solid white;
+        color: #268bd2;
+    }
+    
+    .js-image-zoom {
+        display:inline-block;
+        border: 0.1em solid;
+    }
+    /* magnifying glass icon */
+    
+    .js-image-zoom:after {
+      content:'';
+      display:block; 
+      width:33px; 
+      height:33px; 
+      position:absolute; 
+      top:0;
+      right:0;
+      background:url(https://rawgithub.com/jackmoore/zoom/master/icon.png);
+    }
+
+/*EOF*/
