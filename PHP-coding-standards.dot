@@ -14,25 +14,21 @@
 */
 digraph Standards {
 
-    splines = ortho    
+    layout = fdp
+    splines = true
     center = true
-    
-    compound=true;
-    remincross=true;
+
+    compound=true
+    remincross=true
 
     node [
             center = true
             shape = "box"
             style = "rounded"
-            //fixedsize = true
-            //width = 2
-            //height = 2
-            ratio="compress"
     ];
-    
+
     edge [
-         //style="dashed"
-         len = 1
+        // The default style is fine
     ];
 
 
@@ -322,9 +318,9 @@ subgraph cluster_Conventions {
         PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
         PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
         SYMFONY [label="Symfony"     fillcolor="#303030"]   // black
-        TYPO    [label="Typo/Flow 3"]
-        WP      [label="WordPress"]
-        ZEND    [label="Zend"]
+        TYPO    [label="Typo/Flow 3" fillcolor=""]
+        WP      [label="WordPress"   fillcolor=""]
+        ZEND    [label="Zend"        fillcolor=""]
     }//Frameworks
 
 

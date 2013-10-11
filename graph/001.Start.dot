@@ -9,15 +9,19 @@
 */
 digraph Standards {
 
-    splines = ortho    
+    layout = fdp
+    splines = true
     center = true
-    
+
+    compound=true
+    remincross=true
+
     node [
             center = true
             shape = "box"
             style = "rounded"
     ];
-    
+
     edge [
         // The default style is fine
     ];
