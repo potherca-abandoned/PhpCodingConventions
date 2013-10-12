@@ -1,125 +1,127 @@
-brace_class_Allman                          - Class opening/closing braces on seperate line
-brace_class_OTBS                            - Class structure opening/closing braces on same line as declaration
+brace_class_Allman                              - Class opening/closing braces on seperate line
+brace_class_OTBS                                - Class structure opening/closing braces on same line as declaration
 
-brace_controlStructure_Allman               - Control structure opening/closing braces on seperate line
-brace_controlStructure_OTBS                 - Control structure opening/closing braces on same line as declaration, except for else/elseif
-brace_controlStructure_Stroustrup           - Control structure opening/closing braces on same line as declaration, even for else/elseif
+brace_controlStructure_Allman                   - Control structure opening/closing braces on seperate line
+brace_controlStructure_OTBS                     - Control structure opening/closing braces on same line as declaration, except for else/elseif
+brace_controlStructure_Stroustrup               - Control structure opening/closing braces on same line as declaration, even for else/elseif
 
-brace_controlStructure_mandatory            - Control structure braces are mandatory
+brace_controlStructure_mandatory                - Control structure braces are mandatory
+brace_controlStructure_optional                 - Control structure braces are optional
 
-brace_method_Allman                         - Method opening/closing braces on seperate line
-brace_method_OTBS                           - Method structure opening/closing braces on same line as declaration
+brace_method_Allman                             - Method opening/closing braces on seperate line
+brace_method_OTBS                               - Method structure opening/closing braces on same line as declaration
 
-classAndCrew_sameLine                       - Class keywords (extends/implements) on the same line as class name
+classAndCrew_sameLine                           - Class keywords (extends/implements) on the same line as class name
 
-declareOrder_method_visibilityAfterFinal    - abstract/final declared before visibility
-declareOrder_method_visibilityAfterStatic   - static declared before visibility
-declareOrder_method_visibilityBeforeFinal   - abstract/final declared after visibility
-declareOrder_method_visibilityBeforeStatic  - static declared after visibility
+declareOrder_method_visibilityAfterFinal        - abstract/final declared before visibility
+declareOrder_method_visibilityAfterStatic       - static declared before visibility
+declareOrder_method_visibilityBeforeFinal       - abstract/final declared after visibility
+declareOrder_method_visibilityBeforeStatic      - static declared after visibility
 
-docblocks_mandatory                         - Docblocks manditory
-docblocks_optional                          - Docblocks optional
+docblocks_mandatory                             - Docblocks manditory
+docblocks_optional                              - Docblocks optional
 
-encoding_ISO_8859_1                         - ISO-8859-1
-encoding_utf8                               - UTF-8
+encoding_ISO_8859_1                             - ISO-8859-1
+encoding_utf8                                   - UTF-8
 
-errorLevel_All                              - E_ALL
-errorLevel_Strict                           - E_ALL | E_STRICT
+errorLevel_All                                  - E_ALL
+errorLevel_Strict                               - E_ALL | E_STRICT
 
-indentation_2spaces                         - 2 Spaces
-indentation_4spaces                         - 4 Spaces
-indentation_tabs                            - Tabs
+indentation_2spaces                             - 2 Spaces
+indentation_4spaces                             - 4 Spaces
+indentation_tabs                                - Tabs
 
-indentation_switch_case_0                   - Don`t indent 'case' from 'switch'
-indentation_switch_case_1                   - Indent 'case' one level from 'switch'
-indentation_switch_case_2                   - Indent 'case' two levels from 'switch'
+indentation_switch_case_0                       - Don`t indent 'case' from 'switch'
+indentation_switch_case_1                       - Indent 'case' one level from 'switch'
+indentation_switch_case_2                       - Indent 'case' two levels from 'switch'
 
-indentation_switch_break_0                  - Don`t indent 'break' from 'switch'
-indentation_switch_break_1                  - Indent 'break' one level from 'switch'
-indentation_switch_break_2                  - Indent 'break' two levels from 'switch'
+indentation_switch_break_0                      - Don`t indent 'break' from 'switch'
+indentation_switch_break_1                      - Indent 'break' one level from 'switch'
+indentation_switch_break_2                      - Indent 'break' two levels from 'switch'
 
-lineEnding_any                              - Whatever
-lineEnding_CR                               - Mac Style (CR)
-lineEnding_LFCR                             - Windows Style (CRLF)
-lineEnding_LF                               - UNIX Style (LF)
+lineEnding_any                                  - Whatever
+lineEnding_CR                                   - Mac Style (CR)
+lineEnding_LFCR                                 - Windows Style (CRLF)
+lineEnding_LF                                   - UNIX Style (LF)
 
-linelength_HardLimit120                     - Hard limit on 120 characters
-linelength_HardLimit100                     - Hard limit on 100 characters
-linelength_HardLimit80                      - Hard limit on 80 characters
-linelength_noHardLimit                      - No hard limit on line length
+linelength_HardLimit120                         - Hard limit on 120 characters
+linelength_HardLimit100                         - Hard limit on 100 characters
+linelength_HardLimit80                          - Hard limit on 80 characters
+linelength_noHardLimit                          - No hard limit on line length
 
-linelength_noSoftLimit                      - No soft limit on line length
-linelength_softLimit120                     - Soft limit on 120 characters
-linelength_softLimit80                      - Soft limit on 80 characters
-linelength_softLimit85                      - Soft limit on 85 characters
+linelength_noSoftLimit                          - No soft limit on line length
+linelength_softLimit120                         - Soft limit on 120 characters
+linelength_softLimit80                          - Soft limit on 80 characters
+linelength_softLimit85                          - Soft limit on 85 characters
 
-name_class_camel                            - camelCase
-name_class_pascal                           - PascalCase
-name_class_snakeCaps                        - CAPS_SNAKE_CASE
-name_class_snake                            - snake_case
-name_class_snake_UFirst                     - Snake_first_letter_uppercase
-name_class_snakePascal                      - Snake_Pascal_Case
+name_class_camel                                - camelCase
+name_class_pascal                               - PascalCase
+name_class_snakeCaps                            - CAPS_SNAKE_CASE
+name_class_snake                                - snake_case
+name_class_snake_UFirst                         - Snake_first_letter_uppercase
+name_class_snakePascal                          - Snake_Pascal_Case
 
-name_classConstant_camel                    - camelCase
-name_classConstant_pascal                   - PascalCase
-name_classConstant_snakeCaps                - CAPS_SNAKE_CASE
-name_classConstant_snake                    - snake_case
-name_classConstant_snakePascal              - Snake_Pascal_Case
+name_classConstant_camel                        - camelCase
+name_classConstant_pascal                       - PascalCase
+name_classConstant_snakeCaps                    - CAPS_SNAKE_CASE
+name_classConstant_snake                        - snake_case
+name_classConstant_snakePascal                  - Snake_Pascal_Case
 
-name_classMethod_camel                      - camelCase
-name_classMethod_pascal                     - PascalCase
-name_classMethod_snakeCaps                  - CAPS_SNAKE_CASE
-name_classMethod_snake                      - snake_case
-name_classMethod_snakePascal                - Snake_Pascal_Case
+name_classMethod_camel                          - camelCase
+name_classMethod_pascal                         - PascalCase
+name_classMethod_snakeCaps                      - CAPS_SNAKE_CASE
+name_classMethod_snake                          - snake_case
+name_classMethod_snakePascal                    - Snake_Pascal_Case
 
-name_classVariable_camel                    - camelCase
-name_classVariable_pascal                   - PascalCase
-name_classVariable_snakeCaps                - CAPS_SNAKE_CASE
-name_classVariable_snake                    - snake_case
-name_classVariable_snakePascal              - Snake_Pascal_Case
-name_classVariable_any                      - Anything you like
+name_classVariable_camel                        - camelCase
+name_classVariable_pascal                       - PascalCase
+name_classVariable_snakeCaps                    - CAPS_SNAKE_CASE
+name_classVariable_snake                        - snake_case
+name_classVariable_snakePascal                  - Snake_Pascal_Case
+name_classVariable_any                          - Anything you like
 
-name_constant_camel                         - camelCase
-name_constant_pascal                        - PascalCase
-name_constant_snake                         - snake_case
-name_constant_snakeCaps                     - CAPS_SNAKE_CASE
-name_constant_snakePascal                   - Snake_Pascal_Case
+name_constant_camel                             - camelCase
+name_constant_pascal                            - PascalCase
+name_constant_snake                             - snake_case
+name_constant_snakeCaps                         - CAPS_SNAKE_CASE
+name_constant_snakePascal                       - Snake_Pascal_Case
 
-name_function_camel                         - camelCase
-name_function_pascal                        - PascalCase
-name_function_snakeCaps                     - CAPS_SNAKE_CASE
-name_function_snake                         - snake_case
-name_function_snakePascal                   - Snake_Pascal_Case
+name_function_camel                             - camelCase
+name_function_pascal                            - PascalCase
+name_function_snakeCaps                         - CAPS_SNAKE_CASE
+name_function_snake                             - snake_case
+name_function_snakePascal                       - Snake_Pascal_Case
 
-namespace_poorMans                          - Use Class/Functions Name instead of Namespace
-namespace_proper                            - Use Namespace
+namespace_poorMans                              - Use Class/Functions Name instead of Namespace
+namespace_proper                                - Use Namespace
 
-PhpConstants_lowerCase                      - PHP Constants LowerCase (true/false/null)
-PhpConstants_upperCase                      - PHP Constants UpperCase (TRUE/FALSE/NULL)
+PhpConstants_lowerCase                          - PHP Constants LowerCase (true/false/null)
+PhpConstants_upperCase                          - PHP Constants UpperCase (TRUE/FALSE/NULL)
 
-PhpKeywords_lowerCase                       - PHP Keywords LowerCase (try/catch/if/switch/etc)
-PhpKeywords_upperCase                       - PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)
+PhpKeywords_lowerCase                           - PHP Keywords LowerCase (try/catch/if/switch/etc)
+PhpKeywords_upperCase                           - PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)
 
-space_controlStructureKeyword_noSpaceAfter  - No space between control keyword and opening parenthesis
-space_controlStructureKeyword_spaceAfter    - Space between control keyword and opening parenthesis
 
-space_controlStructureParentheses_noSpaces  - No space between control parenthesis and innards
-space_controlStructureParentheses_spaces    - Space between control parenthesis and innards
+space_controlStructureBrackets_SpaceOutside     - Space before (and after) parenthesis of control structure evaluation block
+space_controlStructureBrackets_NoSpaceOutside   - No Space before (and after) parenthesis of control structure evaluation block
 
-space_methodName_noSpaceAfter               - No space between method name and opening parenthesis
-space_methodName_spaceAfter                 - Space between method name and opening parenthesis
-space_methodParamsBlock_noSpaceAfter        - No space after method parameter block and opening brace
-space_methodParamsBlock_spaceAfter          - Space after method parameter block and opening brace
+space_controlStructureBrackets_SpaceInside      - Space between the parenthesis and content of control structure evaluation block
+space_controlStructureBrackets_NoSpaceInside    - Space between the parenthesis and content of control structure evaluation block
 
-tag_closingTagAllowed                       - Closing tag '?>' allowed
-tag_closingTagManditory                     - Closing tag '?>' manditory
-tag_closingTagNotAllowed                    - Closing tag '?>' not allowed
+space_methodName_noSpaceAfter                   - No space between method name and opening parenthesis
+space_methodName_spaceAfter                     - Space between method name and opening parenthesis
+space_methodParamsBlock_noSpaceAfter            - No space after method parameter block and opening brace
+space_methodParamsBlock_spaceAfter              - Space after method parameter block and opening brace
 
-tag_shortEchoTagAllowed                     - Short tag '<?=' allowed
-tag_shortEchoTagNotAllowed                  - Short tag '<?=' not allowed
+tag_closingTagAllowed                           - Closing tag '?>' allowed
+tag_closingTagManditory                         - Closing tag '?>' manditory
+tag_closingTagNotAllowed                        - Closing tag '?>' not allowed
 
-tag_shortTagAllowed                         - Short tag '<?' allowed
-tag_shortTagNotAllowed                      - Short tag '<?' not allowed
+tag_shortEchoTagAllowed                         - Short tag '<?=' allowed
+tag_shortEchoTagNotAllowed                      - Short tag '<?=' not allowed
+
+tag_shortTagAllowed                             - Short tag '<?' allowed
+tag_shortTagNotAllowed                          - Short tag '<?' not allowed
 
 @FIXME: We're going to have to add a lot of "Don't care" labels for various 
         subgraphs. (look for orphan blocks in the PNG)
@@ -129,5 +131,6 @@ tag_shortTagNotAllowed                      - Short tag '<?' not allowed
 @TODO: Usage of include_once versus require_once?
 @TODO: Usage of underscore '_' for private/protected properties? (PSR explicitly says no, some others explicitly say yes. Could be interesting to see?)
 @TODO: Conventions for file names?
+@TODO: Add Yoda Conditions (left side comparison) versus Sane Conditions (right side comparison)?
 
 #EOF

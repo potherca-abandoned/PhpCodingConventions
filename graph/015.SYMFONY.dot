@@ -30,14 +30,14 @@
     SYMFONY -> brace_method_Allman
     SYMFONY -> declareOrder_method_visibilityAfterStatic
     SYMFONY -> declareOrder_method_visibilityBeforeStatic
-    SYMFONY -> space_controlStructureKeyword_spaceAfter
+    SYMFONY -> space_controlStructureBrackets_SpaceOutside
     SYMFONY -> space_methodName_noSpaceAfter
     SYMFONY -> brace_controlStructure_OTBS
     SYMFONY -> lineEnding_LF
     SYMFONY -> tag_closingTagNotAllowed
     SYMFONY -> PhpConstants_lowerCase
     SYMFONY -> classAndCrew_sameLine
-    SYMFONY -> space_controlStructureParentheses_spaces
+    SYMFONY -> space_controlStructureBrackets_SpaceInside
     SYMFONY -> indentation_switch_case_1
     SYMFONY -> indentation_switch_break_2
 /*SYMFONY2*/

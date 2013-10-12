@@ -9,7 +9,7 @@
     HORDE -> indentation_4spaces
     HORDE -> PhpConstants_lowerCase
     HORDE -> brace_controlStructure_OTBS
-    HORDE -> space_controlStructureKeyword_spaceAfter
+    HORDE -> space_controlStructureBrackets_SpaceOutside
     HORDE -> brace_controlStructure_mandatory
     HORDE -> indentation_switch_case_0
     HORDE -> indentation_switch_break_1

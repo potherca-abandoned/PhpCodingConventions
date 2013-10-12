@@ -7,8 +7,8 @@
     ]
 
     CAKE -> indentation_tabs
-    CAKE -> space_controlStructureKeyword_spaceAfter
-    CAKE -> space_controlStructureParentheses_spaces
+    CAKE -> space_controlStructureBrackets_SpaceOutside
+    CAKE -> space_controlStructureBrackets_SpaceInside
     CAKE -> brace_controlStructure_mandatory
     CAKE -> brace_controlStructure_OTBS
     CAKE -> brace_class_Allman

@@ -207,11 +207,11 @@ subgraph cluster_Conventions {
 
             subgraph cluster_ControlStructureSpaces {
                 label="Control Structures"
-                space_controlStructureKeyword_spaceAfter      [label="Space between control keyword and opening parenthesis"]
-                space_controlStructureKeyword_noSpaceAfter    [label="No space between control keyword and opening parenthesis"]
+                space_controlStructureBrackets_SpaceOutside      [label="Space between control keyword and opening parenthesis"]
+                space_controlStructureBrackets_NoSpaceOutside    [label="No space between control keyword and opening parenthesis"]
     
-                space_controlStructureParentheses_spaces      [label="Space between control parenthesis and innards"]
-                space_controlStructureParentheses_noSpaces    [label="No space between control parenthesis and innards"]
+                space_controlStructureBrackets_SpaceInside      [label="Space between control parenthesis and innards"]
+                space_controlStructureBrackets_NoSpaceInside    [label="No space between control parenthesis and innards"]
             }//ControlStructure
 
             subgraph cluster_MethodName {

@@ -27,6 +27,6 @@
     PEAR -> encoding_ISO_8859_1
     PEAR -> lineEnding_LF
     PEAR -> errorLevel_Strict
-    PEAR -> space_controlStructureKeyword_spaceAfter
+    PEAR -> space_controlStructureBrackets_SpaceOutside
 /*PEAR*/
 

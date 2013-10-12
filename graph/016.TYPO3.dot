@@ -19,8 +19,8 @@
     TYPO3 -> name_classConstant_snakeCaps
     TYPO3 -> name_constant_snakeCaps
     TYPO3 -> PhpConstants_upperCase
-    TYPO3 -> space_controlStructureKeyword_spaceAfter
-    TYPO3 -> space_controlStructureParentheses_spaces
+    TYPO3 -> space_controlStructureBrackets_SpaceOutside
+    TYPO3 -> space_controlStructureBrackets_SpaceInside
     TYPO3 -> brace_controlStructure_OTBS
     TYPO3 -> indentation_switch_case_1
     TYPO3 -> indentation_switch_break_1
