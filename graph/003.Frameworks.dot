@@ -20,7 +20,7 @@
         PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
         PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
         SYMFONY [label="Symfony"     fillcolor="#303030"]   // black
-        TYPO    [label="Typo/Flow 3" fillcolor="#FF8600"]
+        TYPO3   [label="Typo/Flow 3" fillcolor="#FF8600"]   // orange
         WP      [label="WordPress"   fillcolor=""]
         ZEND    [label="Zend"        fillcolor=""]
     }//Frameworks

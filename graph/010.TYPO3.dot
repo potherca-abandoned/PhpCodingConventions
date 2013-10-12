@@ -7,26 +7,26 @@
     ]
 
 
-    PSR -> tag_closingTagManditory
-    PSR -> linelength_noHardLimit
-    PSR -> linelength_noSoftLimit
-    PSR -> lineEnding_LF
-    PSR -> encoding_utf8
-    PSR -> indentation_tabs
-    PSR -> name_class_pascal
-    PSR -> name_classMethod_camel
-    PSR -> name_classVariable_camel
-    PSR -> name_classConstant_snakeCaps
-    PSR -> name_constant_snakeCaps
-    PSR -> PhpConstants_upperCase
-    PSR -> space_controlStructureKeyword_spaceAfter
-    PSR -> space_controlStructureParentheses_spaces
-    PSR -> brace_controlStructure_OTBS
-    PSR -> indentation_switch_case_1
-    PSR -> indentation_switch_break_1
-    PSR -> docblocks_mandatory
-    PSR -> namespace_poorMans
-    PSR -> tag_shortTagNotAllowed
+    TYPO3 -> tag_closingTagManditory
+    TYPO3 -> linelength_noHardLimit
+    TYPO3 -> linelength_noSoftLimit
+    TYPO3 -> lineEnding_LF
+    TYPO3 -> encoding_utf8
+    TYPO3 -> indentation_tabs
+    TYPO3 -> name_class_pascal
+    TYPO3 -> name_classMethod_camel
+    TYPO3 -> name_classVariable_camel
+    TYPO3 -> name_classConstant_snakeCaps
+    TYPO3 -> name_constant_snakeCaps
+    TYPO3 -> PhpConstants_upperCase
+    TYPO3 -> space_controlStructureKeyword_spaceAfter
+    TYPO3 -> space_controlStructureParentheses_spaces
+    TYPO3 -> brace_controlStructure_OTBS
+    TYPO3 -> indentation_switch_case_1
+    TYPO3 -> indentation_switch_break_1
+    TYPO3 -> docblocks_mandatory
+    TYPO3 -> namespace_poorMans
+    TYPO3 -> tag_shortTagNotAllowed
     
 /*TYPO3*/
 
