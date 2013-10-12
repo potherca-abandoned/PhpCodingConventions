@@ -1,0 +1,32 @@
+/*
+ *  TYPO3 Coding Conventions
+ */
+    edge [
+        color="#FF8600"
+        arrowhead = "obox"
+    ]
+
+
+    PSR -> tag_closingTagManditory
+    PSR -> linelength_noHardLimit
+    PSR -> linelength_noSoftLimit
+    PSR -> lineEnding_LF
+    PSR -> encoding_utf8
+    PSR -> indentation_tabs
+    PSR -> name_class_pascal
+    PSR -> name_classMethod_camel
+    PSR -> name_classVariable_camel
+    PSR -> name_classConstant_snakeCaps
+    PSR -> name_constant_snakeCaps
+    PSR -> PhpConstants_upperCase
+    PSR -> space_controlStructureKeyword_spaceAfter
+    PSR -> space_controlStructureParentheses_spaces
+    PSR -> brace_controlStructure_OTBS
+    PSR -> indentation_switch_case_1
+    PSR -> indentation_switch_break_1
+    PSR -> docblocks_mandatory
+    PSR -> namespace_poorMans
+    PSR -> tag_shortTagNotAllowed
+    
+/*TYPO3*/
+

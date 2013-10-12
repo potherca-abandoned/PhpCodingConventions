@@ -318,7 +318,7 @@ subgraph cluster_Conventions {
         PEAR    [label="PEAR",       fillcolor="#4e9a06"]   // green
         PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
         SYMFONY [label="Symfony"     fillcolor="#303030"]   // black
-        TYPO    [label="Typo/Flow 3" fillcolor=""]
+        TYPO    [label="Typo/Flow 3" fillcolor="#FF8600"]
         WP      [label="WordPress"   fillcolor=""]
         ZEND    [label="Zend"        fillcolor=""]
     }//Frameworks
@@ -521,6 +521,38 @@ subgraph cluster_Conventions {
     SYMFONY -> indentation_switch_case_1
     SYMFONY -> indentation_switch_break_2
 /*SYMFONY2*/
+
+/*
+ *  TYPO3 Coding Conventions
+ */
+    edge [
+        color="#FF8600"
+        arrowhead = "obox"
+    ]
+
+
+    PSR -> tag_closingTagManditory
+    PSR -> linelength_noHardLimit
+    PSR -> linelength_noSoftLimit
+    PSR -> lineEnding_LF
+    PSR -> encoding_utf8
+    PSR -> indentation_tabs
+    PSR -> name_class_pascal
+    PSR -> name_classMethod_camel
+    PSR -> name_classVariable_camel
+    PSR -> name_classConstant_snakeCaps
+    PSR -> name_constant_snakeCaps
+    PSR -> PhpConstants_upperCase
+    PSR -> space_controlStructureKeyword_spaceAfter
+    PSR -> space_controlStructureParentheses_spaces
+    PSR -> brace_controlStructure_OTBS
+    PSR -> indentation_switch_case_1
+    PSR -> indentation_switch_break_1
+    PSR -> docblocks_mandatory
+    PSR -> namespace_poorMans
+    PSR -> tag_shortTagNotAllowed
+    
+/*TYPO3*/
 
 }//Standards
 
