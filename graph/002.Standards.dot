@@ -1,16 +1,23 @@
 subgraph cluster_Conventions {
+    node [
+        style = "filled, rounded"
+        shape = "record"
+    ];
+
     subgraph cluster_Tags {
         label = "Tags"
-        
-        tag_shortTagAllowed    [label="Short tag '<?' allowed"]
-        tag_shortTagNotAllowed [label="Short tag '<?' not allowed"]
+        tag_short [label="Short Tags \
+            |<TagAllowed> Short tag '&lt;?' allowed \
+            |<TagNotAllowed> Short tag '&lt;?' not allowed \
+            |<EchoTagAllowed> Short tag '&lt;?=' allowed \
+            |<EchoTagNotAllowed> Short tag '&lt;?=' not allowed \
+        "]
 
-        tag_shortEchoTagAllowed    [label="Short tag '<?=' allowed"]
-        tag_shortEchoTagNotAllowed [label="Short tag '<?=' not allowed"]
-
-        tag_closingTagAllowed    [label="Closing tag '?>' allowed"]
-        tag_closingTagManditory  [label="Closing tag '?>' manditory"]
-        tag_closingTagNotAllowed [label="Closing tag '?>' not allowed"]
+        tag_closingTag [label="Closing Tags \
+            |<Allowed> Closing tag '?&gt;' allowed \
+            |<Manditory> Closing tag '?&gt;' manditory \
+            |<NotAllowed> Closing tag '?&gt;' not allowed \
+        "]
     }//Tags
     
     
@@ -26,78 +33,73 @@ subgraph cluster_Conventions {
 
         */
 
-        subgraph cluster_ConstantName {
-            label = "Constant Name"
-            name_constant_camel       [label="camelCase"]
-            name_constant_pascal      [label="PascalCase"]
-            name_constant_snake       [label="snake_case"]
-            name_constant_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_constant_snakePascal [label="Snake_Pascal_Case"]
-        }//ConstantName
+        name_constant [label = "Constant Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+        "]
 
-        subgraph cluster_FunctionName {
-            label = "Global Function Name"
-            name_function_camel       [label="camelCase"]
-            name_function_pascal      [label="PascalCase"]
-            name_function_snake       [label="snake_case"]
-            name_function_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_function_snakePascal [label="Snake_Pascal_Case"]
-        }//FunctionName
+        name_function [label = "Global Function Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+        "]
 
 
-        subgraph cluster_ClassName {
-            label = "Class Name"
-            name_class_camel        [label="camelCase"]
-            name_class_pascal       [label="PascalCase"]
-            name_class_snake        [label="snake_case"]
-            name_class_snakeCaps    [label="CAPS_SNAKE_CASE"]
-            name_class_snakePascal  [label="Snake_Pascal_Case"]
-            name_class_snake_UFirst [label="Snake_first_letter_uppercase"]
-        }//ClassName
+        name_class [label = "Class Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+            |<snake_UFirst> Snake_first_letter_uppercase \
+        "]
 
 
-        subgraph cluster_classConstantName {
-            label = "Class Constant Name"
-            name_classConstant_camel       [label="camelCase"]
-            name_classConstant_pascal      [label="PascalCase"]
-            name_classConstant_snake       [label="snake_case"]
-            name_classConstant_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_classConstant_snakePascal [label="Snake_Pascal_Case"]
-        }//ClassConstantName
+        name_classConstant [label = "Class Constant Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+        "]
 
 
-        subgraph cluster_classMethodName {
-            label = "Class Method Name"
-            name_classMethod_camel       [label="camelCase"]
-            name_classMethod_pascal      [label="PascalCase"]
-            name_classMethod_snake       [label="snake_case"]
-            name_classMethod_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_classMethod_snakePascal [label="Snake_Pascal_Case"]
-        }//ClassMethodName
+        name_classMethod [label = "Class Method Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+        "]
 
-        subgraph cluster_classVariableName {
-            label = "Class Variable Name"
-            name_classVariable_camel       [label="camelCase"]
-            name_classVariable_pascal      [label="PascalCase"]
-            name_classVariable_snake       [label="snake_case"]
-            name_classVariable_snakeCaps   [label="CAPS_SNAKE_CASE"]
-            name_classVariable_snakePascal [label="Snake_Pascal_Case"]
-            name_classVariable_any         [label="Anything you like"]
-        }//ClassVariableName
+        name_classVariable [label = "Class Variable Name \
+            |<camel> camelCase \
+            |<pascal> PascalCase \
+            |<snake> snake_case \
+            |<snakeCaps> CAPS_SNAKE_CASE \
+            |<snakePascal> Snake_Pascal_Case \
+            |<any> Anything you like \
+        "]
 
-        subgraph cluster_Namespace {
-            label="Namespace"
-            namespace_proper [label="Use Namespace"]
-            namespace_poorMans [label="Use Class/Functions Name instead of Namespace"]
-        }//Namespace
+        namespace [label="Namespace \
+            |<proper> Use Namespace \
+            |<poorMans> Use Class/Functions Name instead of Namespace \
+        "]
 
-        subgraph cluster_PhpCasing {
-            PhpKeywords_lowerCase  [label="PHP Keywords LowerCase (try/catch/if/switch/etc)"]
-            PhpKeywords_upperCase  [label="PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC)"]
+        PhpKeywords [label="PHP Keywords \
+            |<lowerCase> PHP Keywords LowerCase (try/catch/if/switch/etc) \
+            |<upperCase> PHP Keywords UpperCase (TRY/CATCH/IF/SWITCH/ETC) \
+        "]
 
-            PhpConstants_lowerCase [label="PHP Constants LowerCase (true/false/null)"]
-            PhpConstants_upperCase [label="PHP Constants UpperCase (TRUE/FALSE/NULL)"]
-        }//PhpCasing
+        PhpConstants [label="PHP Constants \
+            |<lowerCase> PHP Constants LowerCase (true/false/null) \
+            |<upperCase> PHP Constants UpperCase (TRUE/FALSE/NULL) \
+        "]
     }//NameConventions
 
     subgraph cluster_Whitespace {
@@ -106,42 +108,41 @@ subgraph cluster_Conventions {
         subgraph cluster_Indentation {
             label = "Indentation"
 
-            subgraph cluster_General {
-                label="General Indentation"
-                indentation_tabs    [label="Tabs"]
-                indentation_2spaces [label="2 Spaces"]
-                indentation_4spaces [label="4 Spaces"]
-            }//General
+            indentation [label="General Indentation \
+                    |<tabs> Tabs \
+                    |<spaces_2> 2 Spaces \
+                    |<spaces_4> 4 Spaces \
+            "]
 
-            subgraph cluster_SwitchIndentation {
-                label = "Switch"
-
-                indentation_switch_case_0   [label="Don`t indent 'case' from 'switch'"]
-                indentation_switch_case_1   [label="Indent 'case' one level from 'switch'"]
-                indentation_switch_case_2   [label="Indent 'case' two levels from 'switch'"]
-        
-                indentation_switch_break_0   [label="Don`t indent 'break' from 'switch'"]
-                indentation_switch_break_1   [label="Indent 'break' one level from 'switch'"]
-                indentation_switch_break_2   [label="Indent 'break' two levels from 'switch'"]
-            }//SwitchIndentation
+            indentation_switch [label = "Switch Indentation \
+                    |<case_0> Don`t indent 'case' from 'switch' \
+                    |<case_1> Indent 'case' one level from 'switch' \
+                    |<case_2> Indent 'case' two levels from 'switch' \
+                    |<break_0> Don`t indent 'break' from 'switch' \
+                    |<break_1> Indent 'break' one level from 'switch' \
+                    |<break_2> Indent 'break' two levels from 'switch' \
+            "]
         }//Indentation
 
         subgraph cluster_LineLength {
             label = "Line Length"
+            linelength_hardLimit [label = "Hard Limit \
+                |<80> Hard limit on 80 characters \
+                |<100> Hard limit on 100 characters \
+                |<120> Hard limit on 120 characters \
+                |<none> No hard limit on line length \
+            "]
 
-            linelength_HardLimit80  [label="Hard limit on 80 characters"]
-            linelength_HardLimit100 [label="Hard limit on 100 characters"]
-            linelength_HardLimit120 [label="Hard limit on 120 characters"]
-            linelength_noHardLimit  [label="No hard limit on line length"]
-
-            linelength_softLimit80  [label="Soft limit on 80 characters"]
-            linelength_softLimit85  [label="Soft limit on 85 characters"]
-            linelength_softLimit120 [label="Soft limit on 120 characters"]
-            linelength_noSoftLimit  [label="No soft limit on line length"]
+            linelength_softLimit [label  = "Soft Limit \
+                |<80> Soft limit on 80 characters \
+                |<85> Soft limit on 85 characters \
+                |<120> Soft limit on 120 characters \
+                |<none> No soft limit on line length \
+            "]
         }//LineLength
 
 
-        classAndCrew_sameLine [label="Class keywords (extends/implements) on the same line as class name"]
+        //@TODO: classAndCrew_sameLine> Class keywords (extends/implements) on the same line as class name \
 
         subgraph cluster_Braces {
             label = "Brace Placement"
@@ -168,9 +169,9 @@ subgraph cluster_Conventions {
                 context of declaring each type seperately it doesn't really make 
                 sense to use it. It would the same as combining
                 
-                    - brace_class_Allman
-                    - brace_method_Allman
-                    - brace_controlStructure_OTBS
+                    - brace_class:Allman
+                    - brace_method:Allman
+                    - brace_controlStructure:OTBS
                 
                 KandR       : K & R Style (Kernighan and Ritchie)
                              Both opening and closing braces on a seperates line
@@ -180,85 +181,78 @@ subgraph cluster_Conventions {
                              a seperate line, except for else/elsif/etc.
             */
 
-            subgraph cluster_ClassStructure {
-                label="Class"
-                brace_class_Allman  [label="Class opening/closing braces on seperate line"]
-                brace_class_OTBS    [label="Class structure opening/closing braces on same line as declaration"]
-            }
+            brace_class [label="Class \
+                |<Allman> Class opening/closing braces on seperate line \
+                |<OTBS> Class structure opening/closing braces on same line as declaration \
+            "]
 
-            subgraph cluster_Method {
-                label="Function/Method"
-                brace_method_Allman [label="Method opening/closing braces on seperate line"]
-                brace_method_OTBS   [label="Method structure opening/closing braces on same line as declaration"]
-            }
+            brace_method [label="Function/Method \
+                |<Allman> Method opening/closing braces on seperate line \
+                |<OTBS> Method structure opening/closing braces on same line as declaration \
+            "]
 
-            subgraph cluster_ControlStructureBraces {
-                label="Control Structures"
-                brace_controlStructure_Allman       [label="Control structure opening/closing braces on seperate line"]
-                brace_controlStructure_OTBS         [label="Control structure opening/closing braces on same line as declaration, except for else/elseif"]
-                brace_controlStructure_Stroustrup   [label="Control structure opening/closing braces on same line as declaration, even for else/elseif"]
-                
-                brace_controlStructure_mandatory [label="Control structure braces are mandatory"]
-            }//ControlStructure
+            brace_controlStructure [label="Control Structures \
+                |<Allman> Control structure opening/closing braces on seperate line \
+                |<OTBS> Control structure opening/closing braces on same line as declaration, except for else/elseif \
+                |<Stroustrup> Control structure opening/closing braces on same line as declaration, even for else/elseif \
+                |<mandatory> Control structure braces are mandatory \
+            "]
         }//Braces
 
         subgraph cluster_Spaces {
             label="Spaces"
 
-            subgraph cluster_ControlStructureSpaces {
-                label="Control Structures"
-                space_controlStructureBrackets_SpaceOutside      [label="Space between control keyword and opening parenthesis"]
-                space_controlStructureBrackets_NoSpaceOutside    [label="No space between control keyword and opening parenthesis"]
-    
-                space_controlStructureBrackets_SpaceInside      [label="Space between control parenthesis and innards"]
-                space_controlStructureBrackets_NoSpaceInside    [label="No space between control parenthesis and innards"]
-            }//ControlStructure
+            space_controlStructureBrackets [label="Control Structures \
+                |<SpaceOutside> Space between control keyword and opening parenthesis \
+                |<NoSpaceOutside> No space between control keyword and opening parenthesis \
+                |<SpaceInside> Space between control parenthesis and innards \
+                |<NoSpaceInside> No space between control parenthesis and innards \
+            "]
 
-            subgraph cluster_MethodName {
-                label="Functions/Methods"
-                space_methodName_spaceAfter   [label="Space between method name and opening parenthesis"]
-                space_methodName_noSpaceAfter [label="No space between method name and opening parenthesis"]
+            space_methodName [label="Functions/Methods \
+                |<spaceAfter> Space between method name and opening parenthesis \
+                |<noSpaceAfter> No space between method name and opening parenthesis \
+            "]
 
-                space_methodParamsBlock_spaceAfter   [label="Space after method parameter block and opening brace"]
-                space_methodParamsBlock_noSpaceAfter [label="No space after method parameter block and opening brace"]
-            }//MethodName
+            space_methodParamsBlock [label="Functions/Methods Parameter Block \
+                |<spaceAfter> Space after method parameter block and opening brace \
+                |<noSpaceAfter> No space after method parameter block and opening brace \
+            "]
         }//Spaces
+
+        lineEnding [label = "Line Endings \
+                |<any> Whatever \
+                |<LF> UNIX Style (LF) \
+                |<CR> Mac Style (CR) \
+                |<LFCR> Windows Style (CRLF) \
+        "]
     }//Whitespace
 
-    subgraph cluster_Comments {
-        docblocks_mandatory [label="Docblocks manditory"]
-        docblocks_optional  [label="Docblocks optional"]
-    }//Comments
+    docblocks [label="Dockblocks \
+            |<mandatory> Docblocks manditory \
+            |<optional> Docblocks optional \
+    "]
 
-    subgraph cluster_DeclareOrder {
-        label = "Method Declaration Order"
-
-        declareOrder_method_visibilityBeforeFinal   [label="abstract/final declared after visibility"]
-        declareOrder_method_visibilityAfterFinal    [label="abstract/final declared before visibility"]
-
-        declareOrder_method_visibilityBeforeStatic  [label="static declared after visibility"]
-        declareOrder_method_visibilityAfterStatic   [label="static declared before visibility"]
-    }//DeclareOrder
+    declareOrder_method [label = "Method Declaration Order \
+            |<visibilityBeforeFinal> abstract/final declared after visibility \
+            |<visibilityAfterFinal> abstract/final declared before visibility \
+            |<visibilityBeforeStatic> static declared after visibility \
+            |<visibilityAfterStatic> static declared before visibility \
+    "]
 
     subgraph cluster_Miscellaneous {
-        subgraph cluster_FileEncoding {
-            label = "File Encoding"
-            encoding_utf8       [label="UTF-8"]
-            encoding_ISO_8859_1 [label="ISO-8859-1"]
-        }//FileEncoding
+        encoding [label = "File Encoding \
+            |<utf8> UTF-8 \
+            |<ISO_8859_1> ISO-8859-1 \
+        "]
 
-        subgraph cluster_ErrorLevel {
-            label = "Error Level"
-             errorLevel_All [label="E_ALL"]
-             errorLevel_Strict  [label="E_ALL | E_STRICT"]
-        }//ErrorLevel
-
-        subgraph cluster_LineEnding {
-            label = "Line Endings"
-            lineEnding_any  [label="Whatever"]
-            lineEnding_LF   [label="UNIX Style (LF)"]
-            lineEnding_CR   [label="Mac Style (CR)"]
-            lineEnding_LFCR [label="Windows Style (CRLF)"]
-        }//FileEncoding
+        /*
+            @NOTE: We cannot use 'Strict' as that is a reserved word, so we use '_Strict'
+        */
+        errorLevel [label = "Error Level \
+            |<All> E_ALL \
+            |<_Strict> E_ALL &#124; E_STRICT \
+        "]
     }//Miscellaneous
+    
 }//Conventions

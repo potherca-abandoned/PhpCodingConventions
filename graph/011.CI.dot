@@ -6,20 +6,20 @@
         arrowhead="diamond"
     ]
 
-    CI -> encoding_utf8
-    CI -> tag_closingTagNotAllowed
-    CI -> name_class_snake_UFirst
-    CI -> name_classMethod_snake
-    CI -> name_classVariable_snake
-    CI -> docblocks_optional
-    CI -> name_classConstant_snakeCaps
-    CI -> name_constant_snakeCaps
-    CI -> PhpConstants_upperCase
-    CI -> indentation_tabs
-    CI -> lineEnding_LF
-    CI -> brace_class_OTBS
-    CI -> brace_method_Allman
-    CI -> brace_controlStructure_Allman
-    CI -> tag_shortTagNotAllowed
+    CI -> encoding:utf8
+    CI -> tag_closingTag:NotAllowed
+    CI -> name_class:snake_UFirst
+    CI -> name_classMethod:snake
+    CI -> name_classVariable:snake
+    CI -> docblocks:optional
+    CI -> name_classConstant:snakeCaps
+    CI -> name_constant:snakeCaps
+    CI -> PhpConstants:upperCase
+    CI -> indentation:tabs
+    CI -> lineEnding:LF
+    CI -> brace_class:OTBS
+    CI -> brace_method:Allman
+    CI -> brace_controlStructure:Allman
+    CI -> tag_short:TagNotAllowed
 /*Code Igniter*/
 

@@ -1,6 +1,4 @@
 /*
-    https://gist.github.com/potherca/6741287
-
     http://www.graphviz.org/doc/info/lang.html
     http://www.graphviz.org/doc/info/attrs.html
 
@@ -16,12 +14,8 @@ digraph Standards {
     compound=true
     remincross=true
 
-    node [
-            center = true
-            shape = "box"
-            style = "rounded"
-    ];
-
+    rankdir = "LR"  // So the record boxes get stacked horizontally
+    
     edge [
         // The default style is fine
     ];

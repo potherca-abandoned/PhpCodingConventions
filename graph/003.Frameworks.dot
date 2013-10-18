@@ -1,10 +1,10 @@
     subgraph cluster_Frameworks {
 
         label = "Frameworks"
-        style="filled,rounded"
-        fontcolor=white
-        color=red
-        fillcolor=orange
+        style = "filled,rounded"
+        fontcolor = "white"
+        color = "#666699"       // Dark PHP purple
+        fillcolor = "#9999CC"   // Light PHP purple
 
         node [
             style="filled,rounded"
@@ -21,8 +21,8 @@
         PSR     [label="PSR-2",      fillcolor="#2e7bcf"]   // blue
         SYMFONY [label="Symfony"     fillcolor="#303030"]   // black
         TYPO3   [label="Typo/Flow 3" fillcolor="#FF8600"]   // orange
-        WP      [label="WordPress"   fillcolor=""]
-        ZEND    [label="Zend"        fillcolor=""]
+        WP      [label="WordPress"   ]//fillcolor="#21759b"]   // blue
+        ZEND    [label="Zend"        ]//fillcolor="#6AB54B"]   // green
     }//Frameworks
 
 

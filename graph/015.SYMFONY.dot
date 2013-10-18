@@ -5,40 +5,39 @@
         color="#303030"
         arrowhead = "odiamond"
     ]
-/*/
+//*/
     SYMFONY -> PSR
 /*/
     // PSR-0
-    SYMFONY -> namespace_proper
+    SYMFONY -> namespace:proper
 
     // PSR-1
-    SYMFONY -> encoding_utf8
-    SYMFONY -> tag_shortEchoTagAllowed
-    SYMFONY -> tag_shortTagNotAllowed
-    SYMFONY -> name_class_pascal
-    SYMFONY -> name_classConstant_snakeCaps
-    SYMFONY -> name_classMethod_camel
-    SYMFONY -> tag_shortEchoTagAllowed
-    SYMFONY -> tag_shortTagNotAllowed
-    SYMFONY -> name_classVariable_any
+    SYMFONY -> encoding:utf8
+    SYMFONY -> tag_short:EchoTagAllowed
+    SYMFONY -> tag_short:TagNotAllowed
+    SYMFONY -> name_class:pascal
+    SYMFONY -> name_classConstant:snakeCaps
+    SYMFONY -> name_classMethod:camel
+    SYMFONY -> tag_short:EchoTagAllowed
+    SYMFONY -> tag_short:TagNotAllowed
+    SYMFONY -> name_classVariable:any
     
     // PSR-2
-    SYMFONY -> indentation_4spaces
-    SYMFONY -> linelength_softLimit120
-    SYMFONY -> linelength_noHardLimit
-    SYMFONY -> brace_class_Allman
-    SYMFONY -> brace_method_Allman
-    SYMFONY -> declareOrder_method_visibilityAfterStatic
-    SYMFONY -> declareOrder_method_visibilityBeforeStatic
-    SYMFONY -> space_controlStructureBrackets_SpaceOutside
-    SYMFONY -> space_methodName_noSpaceAfter
-    SYMFONY -> brace_controlStructure_OTBS
-    SYMFONY -> lineEnding_LF
-    SYMFONY -> tag_closingTagNotAllowed
-    SYMFONY -> PhpConstants_lowerCase
-    SYMFONY -> classAndCrew_sameLine
-    SYMFONY -> space_controlStructureBrackets_SpaceInside
-    SYMFONY -> indentation_switch_case_1
-    SYMFONY -> indentation_switch_break_2
+    SYMFONY -> indentation:spaces_4
+    SYMFONY -> linelength_softLimit:120
+    SYMFONY -> linelength_hardLimit:none
+    SYMFONY -> brace_class:Allman
+    SYMFONY -> brace_method:Allman
+    SYMFONY -> declareOrder_method:visibilityAfterStatic
+    SYMFONY -> declareOrder_method:visibilityBeforeStatic
+    SYMFONY -> space_controlStructureBrackets:SpaceOutside
+    SYMFONY -> space_methodName:noSpaceAfter
+    SYMFONY -> brace_controlStructure:OTBS
+    SYMFONY -> lineEnding:LF
+    SYMFONY -> tag_closingTag:NotAllowed
+    SYMFONY -> PhpConstants:lowerCase
+    SYMFONY -> space_controlStructureBrackets:SpaceInside
+    SYMFONY -> indentation_switch:case_1
+    SYMFONY -> indentation_switch:break_2
 /*SYMFONY2*/
 

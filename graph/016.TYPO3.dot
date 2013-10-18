@@ -7,26 +7,26 @@
     ]
 
 
-    TYPO3 -> tag_closingTagManditory
-    TYPO3 -> linelength_noHardLimit
-    TYPO3 -> linelength_noSoftLimit
-    TYPO3 -> lineEnding_LF
-    TYPO3 -> encoding_utf8
-    TYPO3 -> indentation_tabs
-    TYPO3 -> name_class_pascal
-    TYPO3 -> name_classMethod_camel
-    TYPO3 -> name_classVariable_camel
-    TYPO3 -> name_classConstant_snakeCaps
-    TYPO3 -> name_constant_snakeCaps
-    TYPO3 -> PhpConstants_upperCase
-    TYPO3 -> space_controlStructureBrackets_SpaceOutside
-    TYPO3 -> space_controlStructureBrackets_SpaceInside
-    TYPO3 -> brace_controlStructure_OTBS
-    TYPO3 -> indentation_switch_case_1
-    TYPO3 -> indentation_switch_break_1
-    TYPO3 -> docblocks_mandatory
-    TYPO3 -> namespace_poorMans
-    TYPO3 -> tag_shortTagNotAllowed
+    TYPO3 -> tag_closingTag:Manditory
+    TYPO3 -> linelength_hardLimit:none
+    TYPO3 -> linelength_softLimit:none
+    TYPO3 -> lineEnding:LF
+    TYPO3 -> encoding:utf8
+    TYPO3 -> indentation:tabs
+    TYPO3 -> name_class:pascal
+    TYPO3 -> name_classMethod:camel
+    TYPO3 -> name_classVariable:camel
+    TYPO3 -> name_classConstant:snakeCaps
+    TYPO3 -> name_constant:snakeCaps
+    TYPO3 -> PhpConstants:upperCase
+    TYPO3 -> space_controlStructureBrackets:SpaceOutside
+    TYPO3 -> space_controlStructureBrackets:SpaceInside
+    TYPO3 -> brace_controlStructure:OTBS
+    TYPO3 -> indentation_switch:case_1
+    TYPO3 -> indentation_switch:break_1
+    TYPO3 -> docblocks:mandatory
+    TYPO3 -> namespace:poorMans
+    TYPO3 -> tag_short:TagNotAllowed
     
 /*TYPO3*/
 

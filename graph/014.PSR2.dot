@@ -7,36 +7,34 @@
     ]
 
     // PSR-0
-    PSR -> namespace_proper
+    PSR -> namespace:proper
     
     // PSR-1
-    PSR -> encoding_utf8
-    PSR -> tag_shortEchoTagAllowed
-    PSR -> tag_shortTagNotAllowed
-    PSR -> name_class_pascal
-    PSR -> name_classConstant_snakeCaps
-    PSR -> name_classMethod_camel
-    PSR -> tag_shortEchoTagAllowed
-    PSR -> tag_shortTagNotAllowed
-    PSR -> name_classVariable_any
+    PSR -> encoding:utf8
+    PSR -> tag_short:EchoTagAllowed
+    PSR -> tag_short:TagNotAllowed
+    PSR -> name_class:pascal
+    PSR -> name_classConstant:snakeCaps
+    PSR -> name_classMethod:camel
+    PSR -> name_classVariable:any
     
     // PSR-2
-    PSR -> indentation_4spaces
-    PSR -> linelength_softLimit120
-    PSR -> linelength_noHardLimit
-    PSR -> brace_class_Allman
-    PSR -> brace_method_Allman
-    PSR -> declareOrder_method_visibilityAfterStatic
-    PSR -> declareOrder_method_visibilityBeforeStatic
-    PSR -> space_controlStructureBrackets_SpaceOutside
-    PSR -> space_methodName_noSpaceAfter
-    PSR -> brace_controlStructure_OTBS
-    PSR -> lineEnding_LF
-    PSR -> tag_closingTagNotAllowed
-    PSR -> PhpConstants_lowerCase
-    PSR -> classAndCrew_sameLine
-    PSR -> space_controlStructureBrackets_SpaceInside
-    PSR -> indentation_switch_case_1
-    PSR -> indentation_switch_break_2
+    PSR -> indentation:spaces_4
+    PSR -> linelength_softLimit:120
+    PSR -> linelength_hardLimit:none
+    PSR -> brace_class:Allman
+    PSR -> brace_method:Allman
+    PSR -> declareOrder_method:visibilityAfterStatic
+    PSR -> declareOrder_method:visibilityBeforeStatic
+    PSR -> space_controlStructureBrackets:SpaceOutside
+    PSR -> space_methodName:noSpaceAfter
+    PSR -> brace_controlStructure:OTBS
+    PSR -> lineEnding:LF
+    PSR -> tag_closingTag:NotAllowed
+    PSR -> PhpConstants:lowerCase
+//     PSR -> classAndCrew:sameLine
+    PSR -> space_controlStructureBrackets:SpaceInside
+    PSR -> indentation_switch:case_1
+    PSR -> indentation_switch:break_2
 /*PSR2*/
 

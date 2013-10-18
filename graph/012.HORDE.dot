@@ -6,22 +6,22 @@
         arrowhead="box"
     ]
 
-    HORDE -> indentation_4spaces
-    HORDE -> PhpConstants_lowerCase
-    HORDE -> brace_controlStructure_OTBS
-    HORDE -> space_controlStructureBrackets_SpaceOutside
-    HORDE -> brace_controlStructure_mandatory
-    HORDE -> indentation_switch_case_0
-    HORDE -> indentation_switch_break_1
-    HORDE -> space_methodName_noSpaceAfter
-    HORDE -> brace_method_Allman
-    HORDE -> brace_class_Allman
-    HORDE -> docblocks_mandatory
-    HORDE -> tag_shortTagNotAllowed
-    HORDE -> tag_closingTagNotAllowed
-    HORDE -> linelength_HardLimit100
-    HORDE -> linelength_softLimit80
-    HORDE -> lineEnding_LF
-    HORDE -> errorLevel_All
+    HORDE -> indentation:spaces_4
+    HORDE -> PhpConstants:lowerCase
+    HORDE -> brace_controlStructure:OTBS
+    HORDE -> space_controlStructureBrackets:SpaceOutside
+    HORDE -> brace_controlStructure:mandatory
+    HORDE -> indentation_switch:case_0
+    HORDE -> indentation_switch:break_1
+    HORDE -> space_methodName:noSpaceAfter
+    HORDE -> brace_method:Allman
+    HORDE -> brace_class:Allman
+    HORDE -> docblocks:mandatory
+    HORDE -> tag_short:TagNotAllowed
+    HORDE -> tag_closingTag:NotAllowed
+    HORDE -> linelength_hardLimit:100
+    HORDE -> linelength_softLimit:80
+    HORDE -> lineEnding:LF
+    HORDE -> errorLevel:All
 /*HORDE*/
 

@@ -6,23 +6,23 @@
         arrowhead="normal"
     ]
 
-    CAKE -> indentation_tabs
-    CAKE -> space_controlStructureBrackets_SpaceOutside
-    CAKE -> space_controlStructureBrackets_SpaceInside
-    CAKE -> brace_controlStructure_mandatory
-    CAKE -> brace_controlStructure_OTBS
-    CAKE -> brace_class_Allman
-    CAKE -> brace_method_Allman
-    CAKE -> space_methodName_noSpaceAfter
-    CAKE -> space_methodParamsBlock_spaceAfter
-    CAKE -> docblocks_optional
-    CAKE -> tag_shortTagNotAllowed
-    CAKE -> name_function_camel
-    CAKE -> name_classMethod_camel
-    CAKE -> name_class_pascal
-    CAKE -> name_classVariable_camel
-    CAKE -> name_classVariable_pascal
-    CAKE -> name_constant_snakeCaps
-    CAKE -> name_classConstant_snakeCaps
+    CAKE -> indentation:tabs
+    CAKE -> space_controlStructureBrackets:SpaceOutside
+    CAKE -> space_controlStructureBrackets:SpaceInside
+    CAKE -> brace_controlStructure:mandatory
+    CAKE -> brace_controlStructure:OTBS
+    CAKE -> brace_class:Allman
+    CAKE -> brace_method:Allman
+    CAKE -> space_methodName:noSpaceAfter
+    CAKE -> space_methodParamsBlock:spaceAfter
+    CAKE -> docblocks:optional
+    CAKE -> tag_short:TagNotAllowed
+    CAKE -> name_function:camel
+    CAKE -> name_classMethod:camel
+    CAKE -> name_class:pascal
+    CAKE -> name_classVariable:camel
+    CAKE -> name_classVariable:pascal
+    CAKE -> name_constant:snakeCaps
+    CAKE -> name_classConstant:snakeCaps
 /*CAKE*/
 
